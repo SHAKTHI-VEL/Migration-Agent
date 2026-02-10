@@ -1,0 +1,6018 @@
+{
+  "timestamp": "2026-02-10T09:55:07.784510",
+  "system": {
+    "hostname": "localhost.localdomain",
+    "fqdn": "localhost.localdomain",
+    "platform": "Linux",
+    "platform_release": "5.14.0-669.el9.x86_64",
+    "platform_version": "#1 SMP PREEMPT_DYNAMIC Wed Jan 28 11:11:41 UTC 2026",
+    "architecture": "x86_64",
+    "processor": "x86_64",
+    "python_version": "3.9.25"
+  },
+  "os": {
+    "name": "CentOS Stream",
+    "version": "9",
+    "id": "centos",
+    "id_like": "rhel fedora",
+    "version_id": "9",
+    "platform_id": "platform:el9",
+    "pretty_name": "CentOS Stream 9",
+    "ansi_color": "0;31",
+    "logo": "fedora-logo-icon",
+    "cpe_name": "cpe:/o:centos:centos:9",
+    "home_url": "https://centos.org/",
+    "bug_report_url": "https://issues.redhat.com/",
+    "redhat_support_product": "Red Hat Enterprise Linux 9",
+    "redhat_support_product_version": "CentOS Stream",
+    "kernel_version": "5.14.0-669.el9.x86_64",
+    "uptime_seconds": 84898.08,
+    "uptime_days": 0.9826166666666667
+  },
+  "cpu": {
+    "physical_cores": 4,
+    "logical_cores": 4,
+    "max_frequency_mhz": 3800.0,
+    "min_frequency_mhz": 800.0,
+    "current_frequency_mhz": 3673.32425,
+    "cpu_percent": 1.5,
+    "per_cpu_percent": [
+      1.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "model_name": "Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz"
+  },
+  "cpu_history_previous_day": {
+    "available": false,
+    "date": null,
+    "average": {},
+    "hourly_data": [],
+    "raw_output": null,
+    "error": "Sysstat file not found: /var/log/sa/sa09"
+  },
+  "sysstat_service_status": {
+    "service_active": true,
+    "service_enabled": true,
+    "service_started": true,
+    "debian_config_updated": false,
+    "error": null
+  },
+  "memory": {
+    "total_bytes": 16375037952,
+    "total_gb": 15.25,
+    "available_bytes": 11185917952,
+    "available_gb": 10.42,
+    "used_bytes": 4782821376,
+    "used_gb": 4.45,
+    "percent_used": 31.7,
+    "swap_total_gb": 7.82,
+    "swap_used_gb": 0.0,
+    "swap_percent": 0.0
+  },
+  "disks": [
+    {
+      "device": "/dev/mapper/cs-root",
+      "mountpoint": "/",
+      "filesystem_type": "xfs",
+      "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+      "total_bytes": 75094818816,
+      "total_gb": 69.94,
+      "used_bytes": 32412160000,
+      "used_gb": 30.19,
+      "free_bytes": 42682658816,
+      "free_gb": 39.75,
+      "percent_used": 43.2
+    },
+    {
+      "device": "/dev/sda5",
+      "mountpoint": "/boot",
+      "filesystem_type": "xfs",
+      "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+      "total_bytes": 1006632960,
+      "total_gb": 0.94,
+      "used_bytes": 648327168,
+      "used_gb": 0.6,
+      "free_bytes": 358305792,
+      "free_gb": 0.33,
+      "percent_used": 64.4
+    },
+    {
+      "device": "/dev/mapper/cs-home",
+      "mountpoint": "/home",
+      "filesystem_type": "xfs",
+      "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+      "total_bytes": 45533364224,
+      "total_gb": 42.41,
+      "used_bytes": 5829279744,
+      "used_gb": 5.43,
+      "free_bytes": 39704084480,
+      "free_gb": 36.98,
+      "percent_used": 12.8
+    },
+    {
+      "device": "/dev/sda1",
+      "mountpoint": "/boot/efi",
+      "filesystem_type": "vfat",
+      "options": "rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro",
+      "total_bytes": 100663296,
+      "total_gb": 0.09,
+      "used_bytes": 34063360,
+      "used_gb": 0.03,
+      "free_bytes": 66599936,
+      "free_gb": 0.06,
+      "percent_used": 33.8
+    }
+  ],
+  "network": {
+    "interfaces": {
+      "lo": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "127.0.0.1",
+          "netmask": "255.0.0.0",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "::1",
+          "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "00:00:00:00:00:00",
+          "netmask": null,
+          "broadcast": null
+        }
+      ],
+      "enp1s0": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "10.10.3.18",
+          "netmask": "255.255.255.0",
+          "broadcast": "10.10.3.255"
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::56bf:64ff:fe5d:792b%enp1s0",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "54:bf:64:5d:79:2b",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-0d5b976dff58": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.19.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.19.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::68f7:6bff:fee4:6f89%br-0d5b976dff58",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "6a:f7:6b:e4:6f:89",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "docker0": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.17.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.17.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::14f3:4fff:fe8d:f485%docker0",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "16:f3:4f:8d:f4:85",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-2be58a71eab7": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.24.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.24.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::9460:d2ff:fe26:940d%br-2be58a71eab7",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "96:60:d2:26:94:0d",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-4bf93b41b285": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.21.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.21.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "3e:40:e5:22:f2:b6",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-68c215f1df76": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "192.168.49.1",
+          "netmask": "255.255.255.0",
+          "broadcast": "192.168.49.255"
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "a6:60:56:25:e2:f8",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-9cdecca310cb": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.20.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.20.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "ae:98:4e:21:13:43",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-d20a37cbbb02": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.22.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.22.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::d8c0:1fff:febc:3e0d%br-d20a37cbbb02",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "da:c0:1f:bc:3e:0d",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-fea630ca48ac": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.23.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.23.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::a8e5:fff:fe09:c0c6%br-fea630ca48ac",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "aa:e5:0f:09:c0:c6",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "br-95cbc136e32d": [
+        {
+          "family": "AddressFamily.AF_INET",
+          "address": "172.25.0.1",
+          "netmask": "255.255.0.0",
+          "broadcast": "172.25.255.255"
+        },
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::f0aa:ff:fe65:9a36%br-95cbc136e32d",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "f2:aa:00:65:9a:36",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth763f9f4": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::5c94:bfff:fe50:3eaa%veth763f9f4",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "5e:94:bf:50:3e:aa",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth45eabba": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::f4:beff:fe2c:2483%veth45eabba",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "02:f4:be:2c:24:83",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "vethd7b7169": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::2c84:9dff:fea2:6837%vethd7b7169",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "2e:84:9d:a2:68:37",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "vethd70870b": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::2003:72ff:fe28:4a0a%vethd70870b",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "22:03:72:28:4a:0a",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "vethe8c3ab0": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::146d:6aff:fe14:845b%vethe8c3ab0",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "16:6d:6a:14:84:5b",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "vethfe981f4": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::64e3:bff:fe50:72bb%vethfe981f4",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "66:e3:0b:50:72:bb",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth6ee6a53": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::b06d:33ff:fe18:b5e1%veth6ee6a53",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "b2:6d:33:18:b5:e1",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "vethacfe608": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::813:93ff:fe86:c373%vethacfe608",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "0a:13:93:86:c3:73",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth0c4a9a6": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::acea:ceff:fede:d1b3%veth0c4a9a6",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "ae:ea:ce:de:d1:b3",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth2f61ccb": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::186c:e4ff:feac:9f85%veth2f61ccb",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "1a:6c:e4:ac:9f:85",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "vethf37c490": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::4490:7fff:fe3d:1f6b%vethf37c490",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "46:90:7f:3d:1f:6b",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth2b60f30": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::a8c7:76ff:fe57:a81d%veth2b60f30",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "aa:c7:76:57:a8:1d",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth90b707a": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::683c:e0ff:fe9f:64cc%veth90b707a",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "6a:3c:e0:9f:64:cc",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth3f813bc": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::9403:44ff:fe4d:6d45%veth3f813bc",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "96:03:44:4d:6d:45",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth39fcbba": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::6462:c6ff:fe5e:5e51%veth39fcbba",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "66:62:c6:5e:5e:51",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth637507f": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::8854:12ff:fe05:8784%veth637507f",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "8a:54:12:05:87:84",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth69d5b25": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::8442:69ff:fe45:5bfb%veth69d5b25",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "86:42:69:45:5b:fb",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ],
+      "veth427d16b": [
+        {
+          "family": "AddressFamily.AF_INET6",
+          "address": "fe80::3cee:bcff:fe89:2d88%veth427d16b",
+          "netmask": "ffff:ffff:ffff:ffff::",
+          "broadcast": null
+        },
+        {
+          "family": "AddressFamily.AF_PACKET",
+          "address": "3e:ee:bc:89:2d:88",
+          "netmask": null,
+          "broadcast": "ff:ff:ff:ff:ff:ff"
+        }
+      ]
+    },
+    "connections": [
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "172.23.0.1:34762",
+        "remote_address": "172.23.0.2:9100",
+        "status": "ESTABLISHED",
+        "pid": 3968,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::8001",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 73327,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8001 -container-ip 172.25.0.3 -container-port 8001 -use-listen-fd"
+      },
+      {
+        "fd": 7,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::80",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 1222,
+        "process_name": "nginx",
+        "process_user": "nginx",
+        "process_cmdline": "nginx: worker process"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::22",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 838,
+        "process_name": "sshd",
+        "process_user": "root",
+        "process_cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:3454",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 73865,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3454 -container-ip 172.22.0.2 -container-port 3306 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:8080",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 88163,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8080 -container-ip 172.17.0.2 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::8081",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 4591,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8081 -container-ip 172.23.0.3 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::8080",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 88170,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8080 -container-ip 172.17.0.2 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:9100",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 3968,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd"
+      },
+      {
+        "fd": 3,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:8081",
+        "remote_address": "172.23.0.4:54142",
+        "status": "ESTABLISHED",
+        "pid": 4576,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.23.0.3 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.3.17:57222",
+        "status": "ESTABLISHED",
+        "pid": 381756,
+        "process_name": "sshd-session",
+        "process_user": "root",
+        "process_cmdline": "sshd-session: root@pts/2               "
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::9100",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 3979,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd"
+      },
+      {
+        "fd": 3,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:9100",
+        "remote_address": "172.23.0.4:33902",
+        "status": "ESTABLISHED",
+        "pid": 3968,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd"
+      },
+      {
+        "fd": 5,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_DGRAM",
+        "local_address": "127.0.0.1:323",
+        "remote_address": null,
+        "status": "NONE",
+        "pid": 806,
+        "process_name": "chronyd",
+        "process_user": "chrony",
+        "process_cmdline": "/usr/sbin/chronyd -F 2"
+      },
+      {
+        "fd": 30,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_DGRAM",
+        "local_address": "10.10.3.18:68",
+        "remote_address": "10.10.3.1:67",
+        "status": "NONE",
+        "pid": 794,
+        "process_name": "NetworkManager",
+        "process_user": "root",
+        "process_cmdline": "/usr/sbin/NetworkManager --no-daemon"
+      },
+      {
+        "fd": 6,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:80",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 1222,
+        "process_name": "nginx",
+        "process_user": "nginx",
+        "process_cmdline": "nginx: worker process"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:8085",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 149203,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8085 -container-ip 172.17.0.9 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:9090",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 152271,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9090 -container-ip 172.23.0.4 -container-port 9090 -use-listen-fd"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "172.23.0.1:52544",
+        "remote_address": "172.23.0.3:8080",
+        "status": "ESTABLISHED",
+        "pid": 4576,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.23.0.3 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::3455",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 4800,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3455 -container-ip 172.22.0.3 -container-port 27017 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::3005",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 139878,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3005 -container-ip 172.17.0.3 -container-port 3000 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::8088",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 5104,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8088 -container-ip 172.19.0.3 -container-port 8088 -use-listen-fd"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.2.16:53679",
+        "status": "ESTABLISHED",
+        "pid": 382603,
+        "process_name": "sshd-session",
+        "process_user": "shakthivel",
+        "process_cmdline": "sshd-session: shakthivel@pts/1         "
+      },
+      {
+        "fd": 5,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:43253",
+        "remote_address": "13.48.138.155:1514",
+        "status": "SYN_SENT",
+        "pid": 2067,
+        "process_name": "wazuh-agentd",
+        "process_user": "wazuh",
+        "process_cmdline": "/var/ossec/bin/wazuh-agentd"
+      },
+      {
+        "fd": 7,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:22",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 838,
+        "process_name": "sshd",
+        "process_user": "root",
+        "process_cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::3454",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 73871,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3454 -container-ip 172.22.0.2 -container-port 3306 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:8088",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 5096,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8088 -container-ip 172.19.0.3 -container-port 8088 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::3000",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 140937,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3000 -container-ip 172.17.0.8 -container-port 3000 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:8081",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 4576,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.23.0.3 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 6,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_DGRAM",
+        "local_address": "::1:323",
+        "remote_address": null,
+        "status": "NONE",
+        "pid": 806,
+        "process_name": "chronyd",
+        "process_user": "chrony",
+        "process_cmdline": "/usr/sbin/chronyd -F 2"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.2.16:53378",
+        "status": "ESTABLISHED",
+        "pid": 378675,
+        "process_name": "sshd-session",
+        "process_user": "shakthivel",
+        "process_cmdline": "sshd-session: shakthivel@pts/0         "
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::3001",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 394645,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3001 -container-ip 172.17.0.5 -container-port 80 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::50000",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 88191,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 50000 -container-ip 172.17.0.2 -container-port 50000 -use-listen-fd"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.4.12:50801",
+        "status": "ESTABLISHED",
+        "pid": 389389,
+        "process_name": "sshd-session",
+        "process_user": "root",
+        "process_cmdline": "sshd-session: root@pts/3               "
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:3000",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 140931,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3000 -container-ip 172.17.0.8 -container-port 3000 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:3455",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 4790,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3455 -container-ip 172.22.0.3 -container-port 27017 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::9090",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 152278,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 9090 -container-ip 172.23.0.4 -container-port 9090 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:50000",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 88184,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 50000 -container-ip 172.17.0.2 -container-port 50000 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET6",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": ":::8085",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 149210,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8085 -container-ip 172.17.0.9 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:3001",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 394639,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3001 -container-ip 172.17.0.5 -container-port 80 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:8001",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 73320,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8001 -container-ip 172.25.0.3 -container-port 8001 -use-listen-fd"
+      },
+      {
+        "fd": 8,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "0.0.0.0:3005",
+        "remote_address": null,
+        "status": "LISTEN",
+        "pid": 139871,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3005 -container-ip 172.17.0.3 -container-port 3000 -use-listen-fd"
+      }
+    ],
+    "listening_ports": [
+      {
+        "port": 22,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 838,
+        "process_name": "sshd",
+        "process_user": "root",
+        "process_cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+      },
+      {
+        "port": 80,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 1222,
+        "process_name": "nginx",
+        "process_user": "nginx",
+        "process_cmdline": "nginx: worker process"
+      },
+      {
+        "port": 3000,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 140937,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3000 -container-ip 172.17.0.8 -container-port 3000 -use-listen-fd"
+      },
+      {
+        "port": 3001,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 394645,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3001 -container-ip 172.17.0.5 -container-port 80 -use-listen-fd"
+      },
+      {
+        "port": 3005,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 139878,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3005 -container-ip 172.17.0.3 -container-port 3000 -use-listen-fd"
+      },
+      {
+        "port": 3454,
+        "protocol": "TCP",
+        "address": "0.0.0.0",
+        "pid": 73865,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3454 -container-ip 172.22.0.2 -container-port 3306 -use-listen-fd"
+      },
+      {
+        "port": 3455,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 4800,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3455 -container-ip 172.22.0.3 -container-port 27017 -use-listen-fd"
+      },
+      {
+        "port": 8001,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 73327,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8001 -container-ip 172.25.0.3 -container-port 8001 -use-listen-fd"
+      },
+      {
+        "port": 8080,
+        "protocol": "TCP",
+        "address": "0.0.0.0",
+        "pid": 88163,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8080 -container-ip 172.17.0.2 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "port": 8081,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 4591,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8081 -container-ip 172.23.0.3 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "port": 8085,
+        "protocol": "TCP",
+        "address": "0.0.0.0",
+        "pid": 149203,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8085 -container-ip 172.17.0.9 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "port": 8088,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 5104,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8088 -container-ip 172.19.0.3 -container-port 8088 -use-listen-fd"
+      },
+      {
+        "port": 9090,
+        "protocol": "TCP",
+        "address": "0.0.0.0",
+        "pid": 152271,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9090 -container-ip 172.23.0.4 -container-port 9090 -use-listen-fd"
+      },
+      {
+        "port": 9100,
+        "protocol": "TCP",
+        "address": "0.0.0.0",
+        "pid": 3968,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd"
+      },
+      {
+        "port": 50000,
+        "protocol": "TCP",
+        "address": "::",
+        "pid": 88191,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 50000 -container-ip 172.17.0.2 -container-port 50000 -use-listen-fd"
+      }
+    ],
+    "established_connections": [
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "172.23.0.1:34762",
+        "remote_address": "172.23.0.2:9100",
+        "status": "ESTABLISHED",
+        "pid": 3968,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd"
+      },
+      {
+        "fd": 3,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:8081",
+        "remote_address": "172.23.0.4:54142",
+        "status": "ESTABLISHED",
+        "pid": 4576,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.23.0.3 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.3.17:57222",
+        "status": "ESTABLISHED",
+        "pid": 381756,
+        "process_name": "sshd-session",
+        "process_user": "root",
+        "process_cmdline": "sshd-session: root@pts/2               "
+      },
+      {
+        "fd": 3,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:9100",
+        "remote_address": "172.23.0.4:33902",
+        "status": "ESTABLISHED",
+        "pid": 3968,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "172.23.0.1:52544",
+        "remote_address": "172.23.0.3:8080",
+        "status": "ESTABLISHED",
+        "pid": 4576,
+        "process_name": "docker-proxy",
+        "process_user": "root",
+        "process_cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.23.0.3 -container-port 8080 -use-listen-fd"
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.2.16:53679",
+        "status": "ESTABLISHED",
+        "pid": 382603,
+        "process_name": "sshd-session",
+        "process_user": "shakthivel",
+        "process_cmdline": "sshd-session: shakthivel@pts/1         "
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.2.16:53378",
+        "status": "ESTABLISHED",
+        "pid": 378675,
+        "process_name": "sshd-session",
+        "process_user": "shakthivel",
+        "process_cmdline": "sshd-session: shakthivel@pts/0         "
+      },
+      {
+        "fd": 4,
+        "family": "AddressFamily.AF_INET",
+        "type": "SocketKind.SOCK_STREAM",
+        "local_address": "10.10.3.18:22",
+        "remote_address": "10.10.4.12:50801",
+        "status": "ESTABLISHED",
+        "pid": 389389,
+        "process_name": "sshd-session",
+        "process_user": "root",
+        "process_cmdline": "sshd-session: root@pts/3               "
+      }
+    ],
+    "statistics": {
+      "bytes_sent": 3458720672,
+      "bytes_recv": 3945331970,
+      "packets_sent": 3411273,
+      "packets_recv": 3553884,
+      "error_in": 0,
+      "error_out": 0,
+      "drop_in": 0,
+      "drop_out": 29
+    }
+  },
+  "service_dependencies": {
+    "arp-ethers.service": {
+      "service_name": "arp-ethers.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "network.service",
+        "basic.target",
+        "systemd-journald.socket",
+        "sysinit.target"
+      ],
+      "before": [
+        "network.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/arp-ethers.service",
+      "description": "Load static arp entries"
+    },
+    "atd.service": {
+      "service_name": "atd.service",
+      "status": "active",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "system.slice",
+        "syslog.target",
+        "systemd-user-sessions.service",
+        "sysinit.target",
+        "basic.target"
+      ],
+      "before": [
+        "shutdown.target",
+        "multi-user.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/atd.service",
+      "description": "Deferred execution scheduler"
+    },
+    "auditd.service": {
+      "service_name": "auditd.service",
+      "status": "active",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "local-fs.target",
+        "systemd-journald.socket",
+        "systemd-tmpfiles-setup.service",
+        "system.slice"
+      ],
+      "before": [
+        "crond.service",
+        "shutdown.target",
+        "sysinit.target",
+        "systemd-update-utmp.service"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/auditd.service",
+      "description": "Security Auditing Service"
+    },
+    "autovt@.service": {
+      "service_name": "autovt@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "blk-availability.service": {
+      "service_name": "blk-availability.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "fcoe.service",
+        "iscsi.service",
+        "multipathd.service",
+        "iscsid.service",
+        "iscsi-shutdown.service",
+        "system.slice",
+        "systemd-journald.socket",
+        "rbdmap.service"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/blk-availability.service",
+      "description": "Availability of block devices"
+    },
+    "bluetooth.service": {
+      "service_name": "bluetooth.service",
+      "status": "inactive",
+      "requires": [
+        "dbus.socket",
+        "system.slice",
+        "-.mount",
+        "sysinit.target"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "tmp.mount",
+        "systemd-remount-fs.service",
+        "sysinit.target",
+        "systemd-tmpfiles-setup.service",
+        "systemd-journald.socket",
+        "system.slice",
+        "-.mount",
+        "dbus.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/bluetooth.service",
+      "description": "Bluetooth service"
+    },
+    "bolt.service": {
+      "service_name": "bolt.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice",
+        "-.mount",
+        "dbus.socket"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "polkit.service",
+        "tmp.mount",
+        "systemd-tmpfiles-setup.service",
+        "systemd-journald.socket",
+        "systemd-remount-fs.service",
+        "basic.target",
+        "system.slice",
+        "-.mount",
+        "sysinit.target",
+        "dbus.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/bolt.service",
+      "description": "Thunderbolt system service"
+    },
+    "chrony-wait.service": {
+      "service_name": "chrony-wait.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "chronyd.service",
+        "system.slice"
+      ],
+      "wants": [
+        "time-sync.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "system.slice",
+        "chronyd.service",
+        "sysinit.target"
+      ],
+      "before": [
+        "time-sync.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/chrony-wait.service",
+      "description": "Wait for chrony to synchronize system clock"
+    },
+    "chronyd-restricted.service": {
+      "service_name": "chronyd-restricted.service",
+      "status": "inactive",
+      "requires": [
+        "-.mount",
+        "system.slice",
+        "sysinit.target"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "ntpdate.service",
+        "systemd-tmpfiles-setup.service",
+        "ntpd.service",
+        "chronyd.service",
+        "sysinit.target",
+        "basic.target",
+        "system.slice",
+        "sntp.service",
+        "tmp.mount",
+        "systemd-remount-fs.service",
+        "-.mount"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "ntpd.service",
+        "chronyd.service",
+        "systemd-timesyncd.service",
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/chronyd-restricted.service",
+      "description": "NTP client (restricted)"
+    },
+    "chronyd.service": {
+      "service_name": "chronyd.service",
+      "status": "active",
+      "requires": [
+        "sysinit.target",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "sysinit.target",
+        "system.slice",
+        "-.mount",
+        "systemd-tmpfiles-setup.service",
+        "tmp.mount",
+        "ntpd.service",
+        "systemd-journald.socket",
+        "ntpdate.service",
+        "sntp.service"
+      ],
+      "before": [
+        "multi-user.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "systemd-timesyncd.service",
+        "ntpd.service"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/chronyd.service",
+      "description": "NTP client/server"
+    },
+    "cni-dhcp.service": {
+      "service_name": "cni-dhcp.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice",
+        "sysinit.target",
+        "cni-dhcp.socket"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "cni-dhcp.socket",
+        "sysinit.target",
+        "network.target",
+        "basic.target",
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/cni-dhcp.service",
+      "description": "CNI DHCP service"
+    },
+    "cockpit-issue.service": {
+      "service_name": "cockpit-issue.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [
+        "network-online.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "cockpit.socket",
+        "basic.target",
+        "system.slice",
+        "network-online.target",
+        "sysinit.target",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/cockpit-issue.service",
+      "description": "Cockpit issue updater service"
+    },
+    "cockpit-session-socket-user.service": {
+      "service_name": "cockpit-session-socket-user.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "basic.target",
+        "sysinit.target",
+        "system.slice",
+        "-.mount",
+        "systemd-tmpfiles-setup.service",
+        "tmp.mount"
+      ],
+      "before": [
+        "shutdown.target",
+        "cockpit-session.socket"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/cockpit-session-socket-user.service",
+      "description": "Dynamic user for /run/cockpit/session socket"
+    },
+    "cockpit-session@.service": {
+      "service_name": "cockpit-session@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "cockpit-wsinstance-http.service": {
+      "service_name": "cockpit-wsinstance-http.service",
+      "status": "inactive",
+      "requires": [
+        "cockpit-session.socket",
+        "system.slice",
+        "sysinit.target",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "tmp.mount",
+        "basic.target",
+        "-.mount",
+        "sysinit.target",
+        "system.slice",
+        "systemd-tmpfiles-setup.service",
+        "cockpit-session.socket",
+        "systemd-journald.socket",
+        "cockpit-wsinstance-http.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/cockpit-wsinstance-http.service",
+      "description": "Cockpit Web Service http instance"
+    },
+    "cockpit-wsinstance-https-factory@.service": {
+      "service_name": "cockpit-wsinstance-https-factory@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "cockpit-wsinstance-https@.service": {
+      "service_name": "cockpit-wsinstance-https@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "cockpit-wsinstance-socket-user.service": {
+      "service_name": "cockpit-wsinstance-socket-user.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "tmp.mount",
+        "-.mount",
+        "system.slice",
+        "sysinit.target",
+        "basic.target",
+        "systemd-tmpfiles-setup.service",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "cockpit-wsinstance-https-factory.socket",
+        "shutdown.target",
+        "cockpit-wsinstance-http.socket"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/cockpit-wsinstance-socket-user.service",
+      "description": "Dynamic user for /run/cockpit/wsinstance/ sockets"
+    },
+    "cockpit.service": {
+      "service_name": "cockpit.service",
+      "status": "inactive",
+      "requires": [
+        "-.mount",
+        "cockpit-wsinstance-http.socket",
+        "sysinit.target",
+        "system.slice",
+        "cockpit-wsinstance-https-factory.socket",
+        "cockpit.socket"
+      ],
+      "wants": [],
+      "required_by": [
+        "\u25cbcockpit-wsinstance-http.service",
+        "\u25cbcockpit-wsinstance-socket-user.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "sysinit.target",
+        "cockpit.socket",
+        "systemd-tmpfiles-setup.service",
+        "cockpit-wsinstance-https-factory.socket",
+        "-.mount",
+        "tmp.mount",
+        "basic.target",
+        "cockpit-wsinstance-http.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/cockpit.service",
+      "description": "Cockpit Web Service"
+    },
+    "console-getty.service": {
+      "service_name": "console-getty.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "sysinit.target",
+        "rc-local.service",
+        "plymouth-quit-wait.service",
+        "system.slice",
+        "basic.target",
+        "systemd-user-sessions.service",
+        "getty-pre.target"
+      ],
+      "before": [
+        "getty.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/console-getty.service",
+      "description": "Console Getty"
+    },
+    "container-getty@.service": {
+      "service_name": "container-getty@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "containerd.service": {
+      "service_name": "containerd.service",
+      "status": "active",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "docker.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "basic.target",
+        "dbus-broker.service",
+        "network.target",
+        "sysinit.target",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target",
+        "docker.service"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/containerd.service",
+      "description": "containerd container runtime"
+    },
+    "cpupower.service": {
+      "service_name": "cpupower.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "syslog.target",
+        "sysinit.target",
+        "system.slice",
+        "systemd-journald.socket",
+        "basic.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/cpupower.service",
+      "description": "Configure CPU power related settings"
+    },
+    "crond.service": {
+      "service_name": "crond.service",
+      "status": "active",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "nss-user-lookup.target",
+        "auditd.service",
+        "systemd-journald.socket",
+        "autofs.service",
+        "ypbind.service",
+        "systemd-user-sessions.service",
+        "time-sync.target",
+        "basic.target",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target",
+        "multi-user.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/crond.service",
+      "description": "Command Scheduler"
+    },
+    "dbus-broker.service": {
+      "service_name": "dbus-broker.service",
+      "status": "active",
+      "requires": [
+        "dbus.socket",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [
+        "dbus.socket"
+      ],
+      "required_by": [
+        "\u25cbfirewalld.service",
+        "NetworkManager.service",
+        "tuned.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "tmp.mount",
+        "system.slice",
+        "-.mount",
+        "systemd-tmpfiles-setup.service",
+        "dbus.socket",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "tuned.service",
+        "user-runtime-dir@0.service",
+        "NetworkManager.service",
+        "basic.target",
+        "firewalld.service",
+        "containerd.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dbus-broker.service",
+      "description": "D-Bus System Message Bus"
+    },
+    "dbus-org.bluez.service": {
+      "service_name": "dbus-org.bluez.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "dbus.socket",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-tmpfiles-setup.service",
+        "systemd-remount-fs.service",
+        "systemd-journald.socket",
+        "basic.target",
+        "tmp.mount",
+        "dbus.socket",
+        "-.mount",
+        "system.slice",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/bluetooth.service",
+      "description": "Bluetooth service"
+    },
+    "dbus-org.freedesktop.hostname1.service": {
+      "service_name": "dbus-org.freedesktop.hostname1.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "dbus.socket",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-tmpfiles-setup.service",
+        "-.mount",
+        "dbus.socket",
+        "system.slice",
+        "tmp.mount",
+        "basic.target",
+        "systemd-journald.socket",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/systemd-hostnamed.service",
+      "description": "Hostname Service"
+    },
+    "dbus-org.freedesktop.locale1.service": {
+      "service_name": "dbus-org.freedesktop.locale1.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice",
+        "sysinit.target",
+        "-.mount",
+        "dbus.socket"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-tmpfiles-setup.service",
+        "systemd-journald.socket",
+        "-.mount",
+        "dbus.socket",
+        "sysinit.target",
+        "basic.target",
+        "tmp.mount",
+        "system.slice"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/systemd-localed.service",
+      "description": "Locale Service"
+    },
+    "dbus-org.freedesktop.login1.service": {
+      "service_name": "dbus-org.freedesktop.login1.service",
+      "status": "active",
+      "requires": [
+        "system.slice",
+        "-.mount",
+        "sysinit.target"
+      ],
+      "wants": [
+        "dbus.socket",
+        "user.slice",
+        "modprobe@drm.service"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-remount-fs.service",
+        "systemd-tmpfiles-setup.service",
+        "dbus.socket",
+        "tmp.mount",
+        "nss-user-lookup.target",
+        "basic.target",
+        "system.slice",
+        "-.mount",
+        "modprobe@drm.service",
+        "systemd-journald.socket",
+        "user.slice",
+        "sysinit.target"
+      ],
+      "before": [
+        "session-35.scope",
+        "multi-user.target",
+        "session-32.scope",
+        "session-1.scope",
+        "shutdown.target",
+        "session-37.scope",
+        "session-38.scope"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/systemd-logind.service",
+      "description": "User Login Management"
+    },
+    "dbus-org.freedesktop.nm-dispatcher.service": {
+      "service_name": "dbus-org.freedesktop.nm-dispatcher.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice",
+        "dbus.socket"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "dbus.socket",
+        "sysinit.target",
+        "system.slice",
+        "systemd-journald.socket",
+        "basic.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/NetworkManager-dispatcher.service",
+      "description": "Network Manager Script Dispatcher Service"
+    },
+    "dbus-org.freedesktop.timedate1.service": {
+      "service_name": "dbus-org.freedesktop.timedate1.service",
+      "status": "inactive",
+      "requires": [
+        "dbus.socket",
+        "-.mount",
+        "system.slice",
+        "sysinit.target"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "tmp.mount",
+        "systemd-tmpfiles-setup.service",
+        "dbus.socket",
+        "-.mount",
+        "basic.target",
+        "sysinit.target",
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/systemd-timedated.service",
+      "description": "Time & Date Service"
+    },
+    "dbus.service": {
+      "service_name": "dbus.service",
+      "status": "active",
+      "requires": [
+        "dbus.socket",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [
+        "dbus.socket"
+      ],
+      "required_by": [
+        "\u25cbfirewalld.service",
+        "NetworkManager.service",
+        "tuned.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "tmp.mount",
+        "system.slice",
+        "-.mount",
+        "systemd-tmpfiles-setup.service",
+        "dbus.socket",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "tuned.service",
+        "user-runtime-dir@0.service",
+        "NetworkManager.service",
+        "basic.target",
+        "firewalld.service",
+        "containerd.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dbus-broker.service",
+      "description": "D-Bus System Message Bus"
+    },
+    "debug-shell.service": {
+      "service_name": "debug-shell.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice"
+      ],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/debug-shell.service",
+      "description": "Early root shell on /dev/tty9 FOR DEBUGGING ONLY"
+    },
+    "dm-event.service": {
+      "service_name": "dm-event.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice",
+        "dm-event.socket"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "system.slice",
+        "dm-event.socket"
+      ],
+      "before": [
+        "shutdown.target",
+        "lvm2-monitor.service",
+        "local-fs-pre.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dm-event.service",
+      "description": "Device-mapper event daemon"
+    },
+    "dnf-makecache.service": {
+      "service_name": "dnf-makecache.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "dnf-makecache.timer",
+        "sysinit.target",
+        "system.slice",
+        "systemd-journald.socket",
+        "basic.target",
+        "network-online.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dnf-makecache.service",
+      "description": "dnf makecache"
+    },
+    "dnf-system-upgrade-cleanup.service": {
+      "service_name": "dnf-system-upgrade-cleanup.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/dnf-system-upgrade-cleanup.service",
+      "description": "System Upgrade using DNF failed"
+    },
+    "dnf-system-upgrade.service": {
+      "service_name": "dnf-system-upgrade.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "sysinit.target",
+        "systemd-journald.socket",
+        "system-update-pre.target",
+        "system.slice"
+      ],
+      "before": [
+        "poweroff.target",
+        "shutdown.target",
+        "system-update.target",
+        "reboot.target"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/dnf-system-upgrade.service",
+      "description": "System Upgrade using DNF"
+    },
+    "docker.service": {
+      "service_name": "docker.service",
+      "status": "active",
+      "requires": [
+        "docker.socket",
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [
+        "network-online.target",
+        "containerd.service"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "containerd.service",
+        "firewalld.service",
+        "docker.socket",
+        "nss-lookup.target",
+        "systemd-journald.socket",
+        "sysinit.target",
+        "system.slice",
+        "time-set.target",
+        "basic.target",
+        "network-online.target"
+      ],
+      "before": [
+        "shutdown.target",
+        "multi-user.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/docker.service",
+      "description": "Docker Application Container Engine"
+    },
+    "dracut-cmdline.service": {
+      "service_name": "dracut-cmdline.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "systemd-journald.socket"
+      ],
+      "required_by": [
+        "\u25cbdracut-pre-udev.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "dracut-pre-udev.service"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "emergency.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-cmdline.service",
+      "description": "dracut cmdline hook"
+    },
+    "dracut-initqueue.service": {
+      "service_name": "dracut-initqueue.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "remote-fs-pre.target",
+        "systemd-udev-trigger.service"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-udev-trigger.service",
+        "system.slice",
+        "dracut-pre-trigger.service",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "dracut-pre-mount.service",
+        "dracut-pre-pivot.service",
+        "remote-fs-pre.target",
+        "dracut-mount.service"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "emergency.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-initqueue.service",
+      "description": "dracut initqueue hook"
+    },
+    "dracut-mount.service": {
+      "service_name": "dracut-mount.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "dracut-initqueue.service",
+        "system.slice",
+        "initrd-root-fs.target",
+        "systemd-journald.socket",
+        "dracut-pre-mount.service",
+        "initrd-parse-etc.service"
+      ],
+      "before": [
+        "dracut-pre-pivot.service"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "emergency.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-mount.service",
+      "description": "dracut mount hook"
+    },
+    "dracut-pre-mount.service": {
+      "service_name": "dracut-pre-mount.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "cryptsetup.target",
+        "systemd-journald.socket",
+        "dracut-initqueue.service",
+        "system.slice"
+      ],
+      "before": [
+        "systemd-fsck-root.service",
+        "dracut-mount.service",
+        "dracut-pre-pivot.service",
+        "sysroot.mount",
+        "initrd-root-fs.target"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "emergency.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-pre-mount.service",
+      "description": "dracut pre-mount hook"
+    },
+    "dracut-pre-pivot.service": {
+      "service_name": "dracut-pre-pivot.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "remote-fs.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "remote-fs.target",
+        "dracut-mount.service",
+        "dracut-pre-mount.service",
+        "system.slice",
+        "initrd-parse-etc.service",
+        "sysroot.mount",
+        "systemd-journald.socket",
+        "initrd.target",
+        "dracut-initqueue.service"
+      ],
+      "before": [
+        "initrd-cleanup.service"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "emergency.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-pre-pivot.service",
+      "description": "dracut pre-pivot and cleanup hook"
+    },
+    "dracut-pre-trigger.service": {
+      "service_name": "dracut-pre-trigger.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "dracut-pre-udev.service",
+        "systemd-udevd.service"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-udevd.service",
+        "systemd-journald.socket",
+        "systemd-tmpfiles-setup-dev.service",
+        "system.slice",
+        "dracut-pre-udev.service"
+      ],
+      "before": [
+        "dracut-initqueue.service",
+        "systemd-udev-trigger.service"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "emergency.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-pre-trigger.service",
+      "description": "dracut pre-trigger hook"
+    },
+    "dracut-pre-udev.service": {
+      "service_name": "dracut-pre-udev.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "dracut-cmdline.service"
+      ],
+      "required_by": [
+        "\u25cbdracut-pre-trigger.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "dracut-cmdline.service",
+        "systemd-journald.socket",
+        "system.slice"
+      ],
+      "before": [
+        "dracut-pre-trigger.service",
+        "systemd-udevd.service"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "emergency.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-pre-udev.service",
+      "description": "dracut pre-udev hook"
+    },
+    "dracut-shutdown-onfailure.service": {
+      "service_name": "dracut-shutdown-onfailure.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-shutdown-onfailure.service",
+      "description": "Service executing upon dracut-shutdown failure to perform cleanup"
+    },
+    "dracut-shutdown.service": {
+      "service_name": "dracut-shutdown.service",
+      "status": "active",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [
+        "local-fs.target"
+      ],
+      "required_by": [
+        "atd.service",
+        "chronyd.service",
+        "containerd.service",
+        "\u25cbcpupower.service",
+        "crond.service",
+        "\u25cbdnf-makecache.service",
+        "docker.service",
+        "\u25cbfirewalld.service",
+        "getty@tty1.service",
+        "irqbalance.service",
+        "\u25cbiscsi.service",
+        "libstoragemgmt.service",
+        "\u25cblogrotate.service",
+        "mcelog.service",
+        "\u25cbmdmonitor.service",
+        "\u25cbmicrocode.service",
+        "\u25cbmlocate-updatedb.service",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service",
+        "nginx.service",
+        "plymouth-quit-wait.service",
+        "plymouth-quit.service",
+        "polkit.service",
+        "\u25cbraid-check.service",
+        "\u25cbrc-local.service",
+        "rsyslog.service",
+        "\u00d7server-inventory.service",
+        "smartd.service",
+        "\u25cbsshd-keygen@ecdsa.service",
+        "\u25cbsshd-keygen@ed25519.service",
+        "\u25cbsshd-keygen@rsa.service",
+        "sshd.service",
+        "\u25cbsssd-kcm.service",
+        "\u25cbsssd.service",
+        "\u25cbsysstat-collect.service",
+        "\u25cbsysstat-summary.service",
+        "sysstat.service",
+        "\u25cbsystemd-ask-password-wall.service",
+        "systemd-logind.service",
+        "\u25cbsystemd-pcrphase.service",
+        "systemd-user-sessions.service",
+        "tuned.service",
+        "\u25cbudisks2.service",
+        "user-runtime-dir@0.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "wazuh-agent.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "sysinit.target",
+        "systemd-journald.socket",
+        "local-fs.target",
+        "boot.automount",
+        "basic.target",
+        "boot.mount"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/dracut-shutdown.service",
+      "description": "Restore /run/initramfs on shutdown"
+    },
+    "emergency.service": {
+      "service_name": "emergency.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-ask-password-console.path",
+        "system.slice",
+        "sysinit.target",
+        "syslog.socket",
+        "systemd-ask-password-console.service",
+        "systemd-ask-password-wall.path"
+      ],
+      "before": [
+        "initrd-switch-root.target",
+        "rescue.service",
+        "emergency.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "rescue.service"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/emergency.service",
+      "description": "Emergency Shell"
+    },
+    "firewalld.service": {
+      "service_name": "firewalld.service",
+      "status": "inactive",
+      "requires": [
+        "dbus-broker.service",
+        "system.slice",
+        "dbus.socket",
+        "sysinit.target"
+      ],
+      "wants": [
+        "network-pre.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "dbus-broker.service",
+        "dbus.socket",
+        "polkit.service",
+        "basic.target",
+        "system.slice",
+        "sysinit.target"
+      ],
+      "before": [
+        "network-pre.target",
+        "docker.service",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "ip6tables.service",
+        "shutdown.target",
+        "ebtables.service",
+        "iptables.service",
+        "ipset.service"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/firewalld.service",
+      "description": "firewalld - dynamic firewall daemon"
+    },
+    "fprintd.service": {
+      "service_name": "fprintd.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "-.mount",
+        "system.slice",
+        "dbus.socket"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "dbus.socket",
+        "tmp.mount",
+        "-.mount",
+        "sysinit.target",
+        "systemd-tmpfiles-setup.service",
+        "system.slice",
+        "basic.target",
+        "systemd-remount-fs.service"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/fprintd.service",
+      "description": "Fingerprint Authentication Daemon"
+    },
+    "fstrim.service": {
+      "service_name": "fstrim.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "sysinit.target",
+        "systemd-journald.socket",
+        "basic.target",
+        "system.slice"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/fstrim.service",
+      "description": "Discard unused blocks on filesystems from /etc/fstab"
+    },
+    "fwupd-offline-update.service": {
+      "service_name": "fwupd-offline-update.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice",
+        "sysinit.target",
+        "dbus.socket"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "dbus.socket",
+        "system-update-pre.target",
+        "sysinit.target",
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target",
+        "system-update.target"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/fwupd-offline-update.service",
+      "description": "Updates device firmware whilst offline"
+    },
+    "fwupd-refresh.service": {
+      "service_name": "fwupd-refresh.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice",
+        "sysinit.target",
+        "-.mount"
+      ],
+      "wants": [
+        "network-online.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "systemd-remount-fs.service",
+        "network-online.target",
+        "tmp.mount",
+        "-.mount",
+        "sysinit.target",
+        "basic.target",
+        "systemd-tmpfiles-setup.service",
+        "system.slice"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/fwupd-refresh.service",
+      "description": "Refresh fwupd metadata and update motd"
+    },
+    "fwupd.service": {
+      "service_name": "fwupd.service",
+      "status": "inactive",
+      "requires": [
+        "dbus.socket",
+        "-.mount",
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-tmpfiles-setup.service",
+        "systemd-journald.socket",
+        "-.mount",
+        "tmp.mount",
+        "system.slice",
+        "dbus-broker.service",
+        "dbus.socket",
+        "basic.target",
+        "systemd-remount-fs.service",
+        "sysinit.target"
+      ],
+      "before": [
+        "display-manager.service",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/fwupd.service",
+      "description": "Firmware update daemon"
+    },
+    "getty@.service": {
+      "service_name": "getty@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "grub-boot-indeterminate.service": {
+      "service_name": "grub-boot-indeterminate.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [
+        "system-update-pre.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "sysinit.target",
+        "system.slice"
+      ],
+      "before": [
+        "system-update-pre.target"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/grub-boot-indeterminate.service",
+      "description": "Mark boot as indeterminate"
+    },
+    "grub2-systemd-integration.service": {
+      "service_name": "grub2-systemd-integration.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "umount.target",
+        "systemd-reboot.service"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/grub2-systemd-integration.service",
+      "description": "Grub2 systemctl reboot --boot-loader-menu=... support"
+    },
+    "initrd-cleanup.service": {
+      "service_name": "initrd-cleanup.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "\u25cbinitrd-switch-root.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "initrd.target",
+        "systemd-journald.socket",
+        "dracut-pre-pivot.service",
+        "system.slice",
+        "initrd-root-fs.target",
+        "initrd-fs.target"
+      ],
+      "before": [
+        "initrd-switch-root.target"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/initrd-cleanup.service",
+      "description": "Cleaning Up and Shutting Down Daemons"
+    },
+    "initrd-parse-etc.service": {
+      "service_name": "initrd-parse-etc.service",
+      "status": "inactive",
+      "requires": [
+        "initrd-root-fs.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "initrd-root-fs.target"
+      ],
+      "before": [
+        "dracut-mount.service",
+        "initrd-fs.target",
+        "dracut-pre-pivot.service"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/initrd-parse-etc.service",
+      "description": "Mountpoints Configured in the Real Root"
+    },
+    "initrd-switch-root.service": {
+      "service_name": "initrd-switch-root.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "initrd-switch-root.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "plymouth-switch-root.service",
+        "systemd-journald.socket",
+        "initrd-switch-root.target",
+        "system.slice"
+      ],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/initrd-switch-root.service",
+      "description": "Switch Root"
+    },
+    "initrd-udevadm-cleanup-db.service": {
+      "service_name": "initrd-udevadm-cleanup-db.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "\u25cbinitrd-switch-root.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "systemd-udev-settle.service",
+        "systemd-udevd-kernel.socket",
+        "system.slice",
+        "systemd-udev-trigger.service",
+        "systemd-udevd-control.socket",
+        "systemd-udevd.service"
+      ],
+      "before": [
+        "initrd-switch-root.target"
+      ],
+      "conflicts": [
+        "systemd-udev-settle.service",
+        "systemd-udevd-kernel.socket",
+        "systemd-udevd.service",
+        "systemd-udevd-control.socket",
+        "systemd-udev-trigger.service"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/initrd-udevadm-cleanup-db.service",
+      "description": "Cleanup udev Database"
+    },
+    "iprdump.service": {
+      "service_name": "iprdump.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "sysinit.target",
+        "system.slice",
+        "systemd-journald.socket",
+        "basic.target"
+      ],
+      "before": [
+        "shutdown.target",
+        "iprupdate.service",
+        "iprinit.service"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/iprdump.service",
+      "description": "IBM Power Raid dump daemon"
+    },
+    "iprinit.service": {
+      "service_name": "iprinit.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "basic.target",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/iprinit.service",
+      "description": "IBM Power Raid init daemon"
+    },
+    "iprupdate.service": {
+      "service_name": "iprupdate.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "sysinit.target",
+        "systemd-journald.socket",
+        "system.slice"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/iprupdate.service",
+      "description": "IBM Power Raid update daemon"
+    },
+    "irqbalance.service": {
+      "service_name": "irqbalance.service",
+      "status": "active",
+      "requires": [
+        "system.slice",
+        "-.mount",
+        "sysinit.target"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "sysinit.target",
+        "basic.target",
+        "tmp.mount",
+        "system.slice",
+        "systemd-tmpfiles-setup.service",
+        "-.mount",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target",
+        "multi-user.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/irqbalance.service",
+      "description": "irqbalance daemon"
+    },
+    "iscsi-init.service": {
+      "service_name": "iscsi-init.service",
+      "status": "inactive",
+      "requires": [
+        "-.mount",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "\u25cbiscsi.service",
+        "\u25cbiscsid.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "system.slice",
+        "-.mount",
+        "systemd-remount-fs.service"
+      ],
+      "before": [
+        "iscsid.service"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/iscsi-init.service",
+      "description": "One time configuration for iscsi.service"
+    },
+    "iscsi-onboot.service": {
+      "service_name": "iscsi-onboot.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "atd.service",
+        "chronyd.service",
+        "containerd.service",
+        "\u25cbcpupower.service",
+        "crond.service",
+        "\u25cbdnf-makecache.service",
+        "docker.service",
+        "dracut-shutdown.service",
+        "\u25cbfirewalld.service",
+        "getty@tty1.service",
+        "irqbalance.service",
+        "\u25cbiscsi.service",
+        "libstoragemgmt.service",
+        "\u25cblogrotate.service",
+        "mcelog.service",
+        "\u25cbmdmonitor.service",
+        "\u25cbmicrocode.service",
+        "\u25cbmlocate-updatedb.service",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service",
+        "nginx.service",
+        "plymouth-quit-wait.service",
+        "plymouth-quit.service",
+        "polkit.service",
+        "\u25cbraid-check.service",
+        "\u25cbrc-local.service",
+        "rsyslog.service",
+        "\u00d7server-inventory.service",
+        "smartd.service",
+        "\u25cbsshd-keygen@ecdsa.service",
+        "\u25cbsshd-keygen@ed25519.service",
+        "\u25cbsshd-keygen@rsa.service",
+        "sshd.service",
+        "\u25cbsssd-kcm.service",
+        "\u25cbsssd.service",
+        "\u25cbsysstat-collect.service",
+        "\u25cbsysstat-summary.service",
+        "sysstat.service",
+        "\u25cbsystemd-ask-password-wall.service",
+        "systemd-logind.service",
+        "\u25cbsystemd-pcrphase.service",
+        "systemd-user-sessions.service",
+        "tuned.service",
+        "\u25cbudisks2.service",
+        "user-runtime-dir@0.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "wazuh-agent.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-remount-fs.service",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "iscsi.service"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/iscsi-onboot.service",
+      "description": "Special handling of early boot iSCSI sessions"
+    },
+    "iscsi-shutdown.service": {
+      "service_name": "iscsi-shutdown.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "remote-fs-pre.target"
+      ],
+      "required_by": [
+        "\u25cbiscsid.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "iscsiuio.service",
+        "iscsid.service",
+        "system.slice",
+        "systemd-journald.socket",
+        "systemd-remount-fs.service",
+        "network.target"
+      ],
+      "before": [
+        "blk-availability.service",
+        "remote-fs-pre.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/iscsi-shutdown.service",
+      "description": "Logout off all iSCSI sessions on shutdown"
+    },
+    "iscsi-starter.service": {
+      "service_name": "iscsi-starter.service",
+      "status": "inactive",
+      "requires": [
+        "-.mount",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "atd.service",
+        "chronyd.service",
+        "containerd.service",
+        "\u25cbcpupower.service",
+        "crond.service",
+        "\u25cbdnf-makecache.service",
+        "docker.service",
+        "dracut-shutdown.service",
+        "\u25cbfirewalld.service",
+        "getty@tty1.service",
+        "irqbalance.service",
+        "\u25cbiscsi.service",
+        "libstoragemgmt.service",
+        "\u25cblogrotate.service",
+        "mcelog.service",
+        "\u25cbmdmonitor.service",
+        "\u25cbmicrocode.service",
+        "\u25cbmlocate-updatedb.service",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service",
+        "nginx.service",
+        "plymouth-quit-wait.service",
+        "plymouth-quit.service",
+        "polkit.service",
+        "\u25cbraid-check.service",
+        "\u25cbrc-local.service",
+        "rsyslog.service",
+        "\u00d7server-inventory.service",
+        "smartd.service",
+        "\u25cbsshd-keygen@ecdsa.service",
+        "\u25cbsshd-keygen@ed25519.service",
+        "\u25cbsshd-keygen@rsa.service",
+        "sshd.service",
+        "\u25cbsssd-kcm.service",
+        "\u25cbsssd.service",
+        "\u25cbsysstat-collect.service",
+        "\u25cbsysstat-summary.service",
+        "sysstat.service",
+        "\u25cbsystemd-ask-password-wall.service",
+        "systemd-logind.service",
+        "\u25cbsystemd-pcrphase.service",
+        "systemd-user-sessions.service",
+        "tuned.service",
+        "\u25cbudisks2.service",
+        "user-runtime-dir@0.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "wazuh-agent.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "-.mount"
+      ],
+      "before": [
+        "sysinit.target",
+        "iscsi.service"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/iscsi-starter.service",
+      "description": "iscsi-starter.service"
+    },
+    "iscsi.service": {
+      "service_name": "iscsi.service",
+      "status": "inactive",
+      "requires": [
+        "iscsi-init.service",
+        "iscsid.socket",
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [
+        "network-online.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "iscsi-onboot.service",
+        "iscsid.service",
+        "basic.target",
+        "multipathd.service",
+        "network-online.target",
+        "iscsi-starter.service",
+        "sysinit.target"
+      ],
+      "before": [
+        "blk-availability.service",
+        "remote-fs.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/iscsi.service",
+      "description": "Login and scanning of iSCSI devices"
+    },
+    "iscsid.service": {
+      "service_name": "iscsid.service",
+      "status": "inactive",
+      "requires": [
+        "iscsi-shutdown.service",
+        "iscsi-init.service",
+        "system.slice"
+      ],
+      "wants": [
+        "remote-fs-pre.target"
+      ],
+      "required_by": [
+        "\u25cbiscsiuio.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "iscsid.socket",
+        "network-online.target",
+        "system.slice",
+        "multipathd.service",
+        "iscsiuio.service",
+        "iscsi-init.service"
+      ],
+      "before": [
+        "remote-fs-pre.target",
+        "iscsi-shutdown.service",
+        "iscsi.service",
+        "blk-availability.service"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/iscsid.service",
+      "description": "Open-iSCSI"
+    },
+    "iscsiuio.service": {
+      "service_name": "iscsiuio.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice",
+        "iscsid.service"
+      ],
+      "wants": [
+        "remote-fs-pre.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "network.target",
+        "iscsiuio.socket",
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "iscsi-shutdown.service",
+        "remote-fs-pre.target",
+        "iscsid.service"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/iscsiuio.service",
+      "description": "iSCSI UserSpace I/O driver"
+    },
+    "kdump.service": {
+      "service_name": "kdump.service",
+      "status": "active",
+      "requires": [
+        "-.mount",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "network-online.target",
+        "systemd-journald.socket",
+        "tmp.mount",
+        "-.mount",
+        "remote-fs.target",
+        "system.slice",
+        "network.target",
+        "basic.target",
+        "systemd-tmpfiles-setup.service"
+      ],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/kdump.service",
+      "description": "Crash recovery kernel arming"
+    },
+    "kmod-static-nodes.service": {
+      "service_name": "kmod-static-nodes.service",
+      "status": "active",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "atd.service",
+        "chronyd.service",
+        "containerd.service",
+        "\u25cbcpupower.service",
+        "crond.service",
+        "\u25cbdnf-makecache.service",
+        "docker.service",
+        "dracut-shutdown.service",
+        "\u25cbfirewalld.service",
+        "getty@tty1.service",
+        "irqbalance.service",
+        "\u25cbiscsi.service",
+        "libstoragemgmt.service",
+        "\u25cblogrotate.service",
+        "mcelog.service",
+        "\u25cbmdmonitor.service",
+        "\u25cbmicrocode.service",
+        "\u25cbmlocate-updatedb.service",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service",
+        "nginx.service",
+        "plymouth-quit-wait.service",
+        "plymouth-quit.service",
+        "polkit.service",
+        "\u25cbraid-check.service",
+        "\u25cbrc-local.service",
+        "rsyslog.service",
+        "\u00d7server-inventory.service",
+        "smartd.service",
+        "\u25cbsshd-keygen@ecdsa.service",
+        "\u25cbsshd-keygen@ed25519.service",
+        "\u25cbsshd-keygen@rsa.service",
+        "sshd.service",
+        "\u25cbsssd-kcm.service",
+        "\u25cbsssd.service",
+        "\u25cbsysstat-collect.service",
+        "\u25cbsysstat-summary.service",
+        "sysstat.service",
+        "\u25cbsystemd-ask-password-wall.service",
+        "systemd-logind.service",
+        "\u25cbsystemd-pcrphase.service",
+        "systemd-user-sessions.service",
+        "tuned.service",
+        "\u25cbudisks2.service",
+        "user-runtime-dir@0.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "wazuh-agent.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "sysinit.target",
+        "systemd-tmpfiles-setup-dev.service"
+      ],
+      "conflicts": [],
+      "unit_file_path": "/usr/lib/systemd/system/kmod-static-nodes.service",
+      "description": "Create List of Static Device Nodes"
+    },
+    "kpatch.service": {
+      "service_name": "kpatch.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [
+        "network-pre.target"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "system.slice",
+        "sysinit.target",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "network-pre.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/kpatch.service",
+      "description": "\"Apply kpatch kernel patches\""
+    },
+    "kvm_stat.service": {
+      "service_name": "kvm_stat.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "sysinit.target",
+        "basic.target",
+        "systemd-journald.socket",
+        "system.slice"
+      ],
+      "before": [
+        "qemu-kvm.service",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/kvm_stat.service",
+      "description": "Service that logs KVM kernel module trace events"
+    },
+    "ldconfig.service": {
+      "service_name": "ldconfig.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "atd.service",
+        "chronyd.service",
+        "containerd.service",
+        "\u25cbcpupower.service",
+        "crond.service",
+        "\u25cbdnf-makecache.service",
+        "docker.service",
+        "dracut-shutdown.service",
+        "\u25cbfirewalld.service",
+        "getty@tty1.service",
+        "irqbalance.service",
+        "\u25cbiscsi.service",
+        "libstoragemgmt.service",
+        "\u25cblogrotate.service",
+        "mcelog.service",
+        "\u25cbmdmonitor.service",
+        "\u25cbmicrocode.service",
+        "\u25cbmlocate-updatedb.service",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service",
+        "nginx.service",
+        "plymouth-quit-wait.service",
+        "plymouth-quit.service",
+        "polkit.service",
+        "\u25cbraid-check.service",
+        "\u25cbrc-local.service",
+        "rsyslog.service",
+        "\u00d7server-inventory.service",
+        "smartd.service",
+        "\u25cbsshd-keygen@ecdsa.service",
+        "\u25cbsshd-keygen@ed25519.service",
+        "\u25cbsshd-keygen@rsa.service",
+        "sshd.service",
+        "\u25cbsssd-kcm.service",
+        "\u25cbsssd.service",
+        "\u25cbsysstat-collect.service",
+        "\u25cbsysstat-summary.service",
+        "sysstat.service",
+        "\u25cbsystemd-ask-password-wall.service",
+        "systemd-logind.service",
+        "\u25cbsystemd-pcrphase.service",
+        "systemd-user-sessions.service",
+        "tuned.service",
+        "\u25cbudisks2.service",
+        "user-runtime-dir@0.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "wazuh-agent.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "system.slice",
+        "local-fs.target"
+      ],
+      "before": [
+        "sysinit.target",
+        "shutdown.target",
+        "initrd-switch-root.target",
+        "systemd-update-done.service"
+      ],
+      "conflicts": [
+        "shutdown.target",
+        "initrd-switch-root.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/ldconfig.service",
+      "description": "Rebuild Dynamic Linker Cache"
+    },
+    "ledmon.service": {
+      "service_name": "ledmon.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "basic.target",
+        "sysinit.target",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/ledmon.service",
+      "description": "Enclosure LED Utilities"
+    },
+    "libstoragemgmt.service": {
+      "service_name": "libstoragemgmt.service",
+      "status": "active",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "sysinit.target",
+        "systemd-journald.socket",
+        "basic.target"
+      ],
+      "before": [
+        "shutdown.target",
+        "multi-user.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/libstoragemgmt.service",
+      "description": "libstoragemgmt plug-in server daemon"
+    },
+    "logrotate.service": {
+      "service_name": "logrotate.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "logrotate.timer",
+        "systemd-tmpfiles-setup.service",
+        "tmp.mount",
+        "systemd-journald.socket",
+        "system.slice",
+        "-.mount",
+        "sysinit.target",
+        "basic.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/logrotate.service",
+      "description": "Rotate log files"
+    },
+    "lvm-devices-import.service": {
+      "service_name": "lvm-devices-import.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "basic.target",
+        "system.slice",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/lvm-devices-import.service",
+      "description": "Create lvm system.devices"
+    },
+    "lvm2-lvmpolld.service": {
+      "service_name": "lvm2-lvmpolld.service",
+      "status": "inactive",
+      "requires": [
+        "lvm2-lvmpolld.socket",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "lvm2-lvmpolld.socket",
+        "systemd-journald.socket",
+        "system.slice"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/lvm2-lvmpolld.service",
+      "description": "LVM2 poll daemon"
+    },
+    "lvm2-monitor.service": {
+      "service_name": "lvm2-monitor.service",
+      "status": "active",
+      "requires": [
+        "system.slice",
+        "dm-event.socket"
+      ],
+      "wants": [],
+      "required_by": [
+        "atd.service",
+        "chronyd.service",
+        "containerd.service",
+        "\u25cbcpupower.service",
+        "crond.service",
+        "\u25cbdnf-makecache.service",
+        "docker.service",
+        "dracut-shutdown.service",
+        "\u25cbfirewalld.service",
+        "getty@tty1.service",
+        "irqbalance.service",
+        "\u25cbiscsi.service",
+        "libstoragemgmt.service",
+        "\u25cblogrotate.service",
+        "mcelog.service",
+        "\u25cbmdmonitor.service",
+        "\u25cbmicrocode.service",
+        "\u25cbmlocate-updatedb.service",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service",
+        "nginx.service",
+        "plymouth-quit-wait.service",
+        "plymouth-quit.service",
+        "polkit.service",
+        "\u25cbraid-check.service",
+        "\u25cbrc-local.service",
+        "rsyslog.service",
+        "\u00d7server-inventory.service",
+        "smartd.service",
+        "\u25cbsshd-keygen@ecdsa.service",
+        "\u25cbsshd-keygen@ed25519.service",
+        "\u25cbsshd-keygen@rsa.service",
+        "sshd.service",
+        "\u25cbsssd-kcm.service",
+        "\u25cbsssd.service",
+        "\u25cbsysstat-collect.service",
+        "\u25cbsysstat-summary.service",
+        "sysstat.service",
+        "\u25cbsystemd-ask-password-wall.service",
+        "systemd-logind.service",
+        "\u25cbsystemd-pcrphase.service",
+        "systemd-user-sessions.service",
+        "tuned.service",
+        "\u25cbudisks2.service",
+        "user-runtime-dir@0.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "wazuh-agent.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "dm-event.socket",
+        "system.slice",
+        "dm-event.service",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target",
+        "local-fs-pre.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/lvm2-monitor.service",
+      "description": "Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling"
+    },
+    "man-db-cache-update.service": {
+      "service_name": "man-db-cache-update.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "sysinit.target",
+        "basic.target",
+        "system.slice",
+        "local-fs.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/man-db-cache-update.service",
+      "description": "man-db-cache-update.service"
+    },
+    "man-db-restart-cache-update.service": {
+      "service_name": "man-db-restart-cache-update.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "system.slice",
+        "sysinit.target",
+        "basic.target"
+      ],
+      "before": [
+        "multi-user.target",
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/man-db-restart-cache-update.service",
+      "description": "man-db-restart-cache-update.service"
+    },
+    "mcelog.service": {
+      "service_name": "mcelog.service",
+      "status": "active",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "syslog.target",
+        "system.slice",
+        "basic.target",
+        "systemd-journald.socket",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target",
+        "multi-user.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/mcelog.service",
+      "description": "Machine Check Exception Logging Daemon"
+    },
+    "mdadm-grow-continue@.service": {
+      "service_name": "mdadm-grow-continue@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "mdadm-last-resort@.service": {
+      "service_name": "mdadm-last-resort@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "mdcheck_continue.service": {
+      "service_name": "mdcheck_continue.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "sysinit.target",
+        "basic.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/mdcheck_continue.service",
+      "description": "MD array scrubbing - continuation"
+    },
+    "mdcheck_start.service": {
+      "service_name": "mdcheck_start.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [
+        "mdcheck_continue.timer"
+      ],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "sysinit.target",
+        "system.slice",
+        "basic.target",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/mdcheck_start.service",
+      "description": "MD array scrubbing"
+    },
+    "mdmon@.service": {
+      "service_name": "mdmon@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "mdmonitor-oneshot.service": {
+      "service_name": "mdmonitor-oneshot.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "systemd-journald.socket",
+        "system.slice",
+        "basic.target",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/mdmonitor-oneshot.service",
+      "description": "Reminder for degraded MD arrays"
+    },
+    "mdmonitor.service": {
+      "service_name": "mdmonitor.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "sysinit.target",
+        "system.slice",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target",
+        "multi-user.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/mdmonitor.service",
+      "description": "Software RAID monitoring and management"
+    },
+    "microcode.service": {
+      "service_name": "microcode.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "basic.target",
+        "sysinit.target"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/microcode.service",
+      "description": "Load CPU microcode update"
+    },
+    "mlocate-updatedb.service": {
+      "service_name": "mlocate-updatedb.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice",
+        "sysinit.target",
+        "-.mount"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "systemd-journald.socket",
+        "tmp.mount",
+        "-.mount",
+        "systemd-tmpfiles-setup.service",
+        "sysinit.target",
+        "system.slice",
+        "mlocate-updatedb.timer"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/mlocate-updatedb.service",
+      "description": "Update a database for mlocate"
+    },
+    "modprobe@.service": {
+      "service_name": "modprobe@.service",
+      "status": "",
+      "requires": [],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [],
+      "before": [],
+      "conflicts": [],
+      "unit_file_path": null,
+      "description": null
+    },
+    "multipathd.service": {
+      "service_name": "multipathd.service",
+      "status": "inactive",
+      "requires": [
+        "system.slice"
+      ],
+      "wants": [
+        "systemd-udev-settle.service",
+        "systemd-udev-trigger.service"
+      ],
+      "required_by": [
+        "atd.service",
+        "chronyd.service",
+        "containerd.service",
+        "\u25cbcpupower.service",
+        "crond.service",
+        "\u25cbdnf-makecache.service",
+        "docker.service",
+        "dracut-shutdown.service",
+        "\u25cbfirewalld.service",
+        "getty@tty1.service",
+        "irqbalance.service",
+        "\u25cbiscsi.service",
+        "libstoragemgmt.service",
+        "\u25cblogrotate.service",
+        "mcelog.service",
+        "\u25cbmdmonitor.service",
+        "\u25cbmicrocode.service",
+        "\u25cbmlocate-updatedb.service",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service",
+        "nginx.service",
+        "plymouth-quit-wait.service",
+        "plymouth-quit.service",
+        "polkit.service",
+        "\u25cbraid-check.service",
+        "\u25cbrc-local.service",
+        "rsyslog.service",
+        "\u00d7server-inventory.service",
+        "smartd.service",
+        "\u25cbsshd-keygen@ecdsa.service",
+        "\u25cbsshd-keygen@ed25519.service",
+        "\u25cbsshd-keygen@rsa.service",
+        "sshd.service",
+        "\u25cbsssd-kcm.service",
+        "\u25cbsssd.service",
+        "\u25cbsysstat-collect.service",
+        "\u25cbsysstat-summary.service",
+        "sysstat.service",
+        "\u25cbsystemd-ask-password-wall.service",
+        "systemd-logind.service",
+        "\u25cbsystemd-pcrphase.service",
+        "systemd-user-sessions.service",
+        "tuned.service",
+        "\u25cbudisks2.service",
+        "user-runtime-dir@0.service",
+        "user-runtime-dir@1001.service",
+        "user@0.service",
+        "user@1001.service",
+        "wazuh-agent.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "systemd-udev-settle.service",
+        "system.slice",
+        "multipathd.socket",
+        "systemd-journald.socket",
+        "systemd-udev-trigger.service"
+      ],
+      "before": [
+        "lvm2-activation-early.service",
+        "iscsi.service",
+        "blk-availability.service",
+        "shutdown.target",
+        "local-fs-pre.target",
+        "iscsid.service"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/multipathd.service",
+      "description": "Device-Mapper Multipath Device Controller"
+    },
+    "netavark-dhcp-proxy.service": {
+      "service_name": "netavark-dhcp-proxy.service",
+      "status": "inactive",
+      "requires": [
+        "netavark-dhcp-proxy.socket",
+        "system.slice",
+        "sysinit.target"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "netavark-dhcp-proxy.socket",
+        "system.slice",
+        "basic.target",
+        "sysinit.target",
+        "systemd-journald.socket"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/netavark-dhcp-proxy.service",
+      "description": "Netavark DHCP proxy service"
+    },
+    "netavark-firewalld-reload.service": {
+      "service_name": "netavark-firewalld-reload.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [
+        "\u25cbfirewalld.service"
+      ],
+      "wanted_by": [],
+      "after": [
+        "system.slice",
+        "systemd-journald.socket",
+        "basic.target",
+        "sysinit.target",
+        "firewalld.service"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/netavark-firewalld-reload.service",
+      "description": "Listen for the firewalld reload event and reapply all netavark firewall rules."
+    },
+    "NetworkManager-dispatcher.service": {
+      "service_name": "NetworkManager-dispatcher.service",
+      "status": "inactive",
+      "requires": [
+        "sysinit.target",
+        "dbus.socket",
+        "system.slice"
+      ],
+      "wants": [],
+      "required_by": [],
+      "wanted_by": [],
+      "after": [
+        "basic.target",
+        "sysinit.target",
+        "dbus.socket",
+        "systemd-journald.socket",
+        "system.slice"
+      ],
+      "before": [
+        "shutdown.target"
+      ],
+      "conflicts": [
+        "shutdown.target"
+      ],
+      "unit_file_path": "/usr/lib/systemd/system/NetworkManager-dispatcher.service",
+      "description": "Network Manager Script Dispatcher Service"
+    }
+  },
+  "application_communication": {
+    "process_to_service": {
+      "docker-proxy": {
+        "pid": 3968,
+        "cmdline": "/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9100 -container-ip 172.23.0.2 -container-port 9100 -use-listen-fd",
+        "local_connections": [],
+        "external_connections": [
+          {
+            "remote_host": "172.23.0.2",
+            "remote_port": 9100,
+            "local_port": "34762",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "Unknown-9100"
+          },
+          {
+            "remote_host": "172.23.0.4",
+            "remote_port": 33902,
+            "local_port": "9100",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "Unknown-33902"
+          },
+          {
+            "remote_host": "172.23.0.4",
+            "remote_port": 54142,
+            "local_port": "8081",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "Unknown-54142"
+          },
+          {
+            "remote_host": "172.23.0.3",
+            "remote_port": 8080,
+            "local_port": "52544",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "HTTP-Alt"
+          }
+        ]
+      },
+      "nginx": {
+        "pid": 1222,
+        "cmdline": "nginx: worker process",
+        "local_connections": [],
+        "external_connections": []
+      },
+      "sshd": {
+        "pid": 838,
+        "cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups",
+        "local_connections": [],
+        "external_connections": []
+      },
+      "sshd-session": {
+        "pid": 381756,
+        "cmdline": "sshd-session: root@pts/2               ",
+        "local_connections": [],
+        "external_connections": [
+          {
+            "remote_host": "10.10.3.17",
+            "remote_port": 57222,
+            "local_port": "22",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "Unknown-57222"
+          },
+          {
+            "remote_host": "10.10.2.16",
+            "remote_port": 53679,
+            "local_port": "22",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "Unknown-53679"
+          },
+          {
+            "remote_host": "10.10.2.16",
+            "remote_port": 53378,
+            "local_port": "22",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "Unknown-53378"
+          },
+          {
+            "remote_host": "10.10.4.12",
+            "remote_port": 50801,
+            "local_port": "22",
+            "protocol": "TCP",
+            "connection_type": "external",
+            "service_name": "Unknown-50801"
+          }
+        ]
+      },
+      "chronyd": {
+        "pid": 806,
+        "cmdline": "/usr/sbin/chronyd -F 2",
+        "local_connections": [],
+        "external_connections": []
+      },
+      "NetworkManager": {
+        "pid": 794,
+        "cmdline": "/usr/sbin/NetworkManager --no-daemon",
+        "local_connections": [],
+        "external_connections": []
+      },
+      "wazuh-agentd": {
+        "pid": 2067,
+        "cmdline": "/var/ossec/bin/wazuh-agentd",
+        "local_connections": [],
+        "external_connections": []
+      }
+    },
+    "process_to_external": {},
+    "service_clients": {},
+    "communication_matrix": [
+      {
+        "source_process": "docker-proxy",
+        "source_pid": 3968,
+        "target_host": "172.23.0.2",
+        "target_port": 9100,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "Unknown-9100"
+      },
+      {
+        "source_process": "docker-proxy",
+        "source_pid": 3968,
+        "target_host": "172.23.0.4",
+        "target_port": 33902,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "Unknown-33902"
+      },
+      {
+        "source_process": "docker-proxy",
+        "source_pid": 4576,
+        "target_host": "172.23.0.4",
+        "target_port": 54142,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "Unknown-54142"
+      },
+      {
+        "source_process": "docker-proxy",
+        "source_pid": 4576,
+        "target_host": "172.23.0.3",
+        "target_port": 8080,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "HTTP-Alt"
+      },
+      {
+        "source_process": "sshd-session",
+        "source_pid": 381756,
+        "target_host": "10.10.3.17",
+        "target_port": 57222,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "Unknown-57222"
+      },
+      {
+        "source_process": "sshd-session",
+        "source_pid": 382603,
+        "target_host": "10.10.2.16",
+        "target_port": 53679,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "Unknown-53679"
+      },
+      {
+        "source_process": "sshd-session",
+        "source_pid": 378675,
+        "target_host": "10.10.2.16",
+        "target_port": 53378,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "Unknown-53378"
+      },
+      {
+        "source_process": "sshd-session",
+        "source_pid": 389389,
+        "target_host": "10.10.4.12",
+        "target_port": 50801,
+        "connection_type": "external",
+        "protocol": "TCP",
+        "likely_service": "Unknown-50801"
+      }
+    ]
+  },
+  "port_dependencies": {
+    "listening_services": {
+      "8001": {
+        "service": "docker-proxy",
+        "pid": 73327,
+        "well_known_service": "Unknown-8001",
+        "clients": []
+      },
+      "80": {
+        "service": "nginx",
+        "pid": 1222,
+        "well_known_service": "HTTP",
+        "clients": []
+      },
+      "22": {
+        "service": "sshd",
+        "pid": 838,
+        "well_known_service": "SSH",
+        "clients": []
+      },
+      "3454": {
+        "service": "docker-proxy",
+        "pid": 73865,
+        "well_known_service": "Unknown-3454",
+        "clients": []
+      },
+      "8080": {
+        "service": "docker-proxy",
+        "pid": 88163,
+        "well_known_service": "HTTP-Alt",
+        "clients": []
+      },
+      "8081": {
+        "service": "docker-proxy",
+        "pid": 4591,
+        "well_known_service": "Unknown-8081",
+        "clients": []
+      },
+      "9100": {
+        "service": "docker-proxy",
+        "pid": 3968,
+        "well_known_service": "Unknown-9100",
+        "clients": []
+      },
+      "8085": {
+        "service": "docker-proxy",
+        "pid": 149203,
+        "well_known_service": "Unknown-8085",
+        "clients": []
+      },
+      "9090": {
+        "service": "docker-proxy",
+        "pid": 152271,
+        "well_known_service": "Unknown-9090",
+        "clients": []
+      },
+      "3455": {
+        "service": "docker-proxy",
+        "pid": 4800,
+        "well_known_service": "Unknown-3455",
+        "clients": []
+      },
+      "3005": {
+        "service": "docker-proxy",
+        "pid": 139878,
+        "well_known_service": "Unknown-3005",
+        "clients": []
+      },
+      "8088": {
+        "service": "docker-proxy",
+        "pid": 5104,
+        "well_known_service": "Unknown-8088",
+        "clients": []
+      },
+      "3000": {
+        "service": "docker-proxy",
+        "pid": 140937,
+        "well_known_service": "Unknown-3000",
+        "clients": []
+      },
+      "3001": {
+        "service": "docker-proxy",
+        "pid": 394645,
+        "well_known_service": "Unknown-3001",
+        "clients": []
+      },
+      "50000": {
+        "service": "docker-proxy",
+        "pid": 88191,
+        "well_known_service": "DB2",
+        "clients": []
+      }
+    },
+    "port_usage_map": {
+      "8001": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-8001",
+        "client_count": 0,
+        "clients": []
+      },
+      "80": {
+        "service": "nginx",
+        "well_known_name": "HTTP",
+        "client_count": 0,
+        "clients": []
+      },
+      "22": {
+        "service": "sshd",
+        "well_known_name": "SSH",
+        "client_count": 0,
+        "clients": []
+      },
+      "3454": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-3454",
+        "client_count": 0,
+        "clients": []
+      },
+      "8080": {
+        "service": "docker-proxy",
+        "well_known_name": "HTTP-Alt",
+        "client_count": 0,
+        "clients": []
+      },
+      "8081": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-8081",
+        "client_count": 0,
+        "clients": []
+      },
+      "9100": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-9100",
+        "client_count": 0,
+        "clients": []
+      },
+      "8085": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-8085",
+        "client_count": 0,
+        "clients": []
+      },
+      "9090": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-9090",
+        "client_count": 0,
+        "clients": []
+      },
+      "3455": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-3455",
+        "client_count": 0,
+        "clients": []
+      },
+      "3005": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-3005",
+        "client_count": 0,
+        "clients": []
+      },
+      "8088": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-8088",
+        "client_count": 0,
+        "clients": []
+      },
+      "3000": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-3000",
+        "client_count": 0,
+        "clients": []
+      },
+      "3001": {
+        "service": "docker-proxy",
+        "well_known_name": "Unknown-3001",
+        "client_count": 0,
+        "clients": []
+      },
+      "50000": {
+        "service": "docker-proxy",
+        "well_known_name": "DB2",
+        "client_count": 0,
+        "clients": []
+      }
+    },
+    "well_known_ports": {},
+    "dependency_graph": []
+  },
+  "docker": {
+    "installed": true,
+    "running": true,
+    "containers": [
+      {
+        "Command": "\"/docker-entrypoint.\u2026\"",
+        "CreatedAt": "2026-02-10 09:48:50 +0530 IST",
+        "ID": "9514833b066e",
+        "Image": "myapp:latest",
+        "Labels": "maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+        "LocalVolumes": "0",
+        "Mounts": "",
+        "Names": "myapp_container",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:3001->80/tcp, [::]:3001->80/tcp",
+        "RunningFor": "6 minutes ago",
+        "Size": "8.19kB (virtual 65.5MB)",
+        "State": "running",
+        "Status": "Up 6 minutes"
+      },
+      {
+        "Command": "\"/go/bin/hotrod-linu\u2026\"",
+        "CreatedAt": "2026-02-09 18:12:47 +0530 IST",
+        "ID": "3d9d1b9953ba",
+        "Image": "jaegertracing/example-hotrod:latest",
+        "Labels": "",
+        "LocalVolumes": "0",
+        "Mounts": "",
+        "Names": "Grafana-APM-Application",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "8081-8083/tcp, 0.0.0.0:8085->8080/tcp, [::]:8085->8080/tcp",
+        "RunningFor": "16 hours ago",
+        "Size": "0B (virtual 25.1MB)",
+        "State": "running",
+        "Status": "Up 16 hours"
+      },
+      {
+        "Command": "\"docker-entrypoint.s\u2026\"",
+        "CreatedAt": "2026-02-09 17:40:46 +0530 IST",
+        "ID": "3035a55f0b3f",
+        "Image": "app-monitor:v1",
+        "Labels": "",
+        "LocalVolumes": "0",
+        "Mounts": "",
+        "Names": "boring_northcutt",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:3005->3000/tcp, [::]:3005->3000/tcp",
+        "RunningFor": "16 hours ago",
+        "Size": "4.1kB (virtual 151MB)",
+        "State": "running",
+        "Status": "Up 16 hours"
+      },
+      {
+        "Command": "\"/usr/bin/tini -- /u\u2026\"",
+        "CreatedAt": "2026-02-09 14:48:02 +0530 IST",
+        "ID": "3f80736b739f",
+        "Image": "jenkins/jenkins:lts",
+        "Labels": "org.opencontainers.image.description=The Jenkins Continuous Integration and Delivery server,org.opencontainers.image.licenses=MIT,org.opencontainers.image.revision=1122ed9016b703e62a07438f652c04b01938657b,org.opencontainers.image.source=https://github.com/jenkinsci/docker,org.opencontainers.image.title=Official Jenkins Docker image,org.opencontainers.image.url=https://www.jenkins.io/,org.opencontainers.image.vendor=Jenkins project,org.opencontainers.image.version=2.541.1",
+        "LocalVolumes": "1",
+        "Mounts": "/usr/bin/docker,jenkins_home,/var/run/docke\u2026",
+        "Names": "jenkins",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp, 0.0.0.0:50000->50000/tcp, [::]:50000->50000/tcp",
+        "RunningFor": "19 hours ago",
+        "Size": "4.98MB (virtual 519MB)",
+        "State": "running",
+        "Status": "Up 19 hours"
+      },
+      {
+        "Command": "\"docker-php-entrypoi\u2026\"",
+        "CreatedAt": "2026-02-09 11:49:48 +0530 IST",
+        "ID": "c15a05d50c03",
+        "Image": "kimai/kimai2:apache",
+        "Labels": "com.docker.compose.config-hash=2d841f28cf755d30d36878f25cc5a53ab3045511cd55d618d7af57f9064a17ea,com.docker.compose.container-number=1,com.docker.compose.depends_on=sqldb:service_started:false,com.docker.compose.image=sha256:11af348a12b8c7bcf17bfabed8eafe0e478a270806d63f3ef1f444856b98b2ce,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/kimai-backup2/docker-compose.yml,com.docker.compose.project.working_dir=/root/kimai-backup2,com.docker.compose.project=kimai-backup2,com.docker.compose.replace=kimai-1,com.docker.compose.service=kimai,com.docker.compose.version=5.0.2,org.opencontainers.image.authors=Kimai Community,org.opencontainers.image.description=Kimai is a time-tracking application.,org.opencontainers.image.documentation=https://www.kimai.org/documentation/,org.opencontainers.image.licenses=AGPL-3.0,org.opencontainers.image.source=https://github.com/kimai/kimai,org.opencontainers.image.title=Kimai,org.opencontainers.image.url=https://www.kimai.org/,org.opencontainers.image.vendor=Kevin Papst,org.opencontainers.image.version=2.46.0",
+        "LocalVolumes": "3",
+        "Mounts": "/root/kimai-co\u2026,278eca55d25c6e\u2026,kimai-backup2_\u2026,kimai-backup2_\u2026,/root/php/kima\u2026",
+        "Names": "kimai-backup2-kimai-1",
+        "Networks": "kimai-backup2_default",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "80/tcp, 0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp",
+        "RunningFor": "22 hours ago",
+        "Size": "86kB (virtual 938MB)",
+        "State": "running",
+        "Status": "Up 20 hours (healthy)"
+      },
+      {
+        "Command": "\"docker-entrypoint.s\u2026\"",
+        "CreatedAt": "2026-02-09 11:47:02 +0530 IST",
+        "ID": "4e3937cb9526",
+        "Image": "mysql:8.3",
+        "Labels": "com.docker.compose.config-hash=69f5fdacc670186058afdf91500ddc22ab0cda28c25fd80d29b120b47c1f3968,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/kimai-backup2/docker-compose.yml,com.docker.compose.project.working_dir=/root/kimai-backup2,com.docker.compose.project=kimai-backup2,com.docker.compose.service=sqldb,com.docker.compose.version=5.0.2",
+        "LocalVolumes": "1",
+        "Mounts": "kimai-backup2_\u2026",
+        "Names": "kimai-backup2-sqldb-1",
+        "Networks": "kimai-backup2_default",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "3306/tcp, 33060/tcp",
+        "RunningFor": "22 hours ago",
+        "Size": "12.3kB (virtual 673MB)",
+        "State": "running",
+        "Status": "Up 20 hours (healthy)"
+      },
+      {
+        "Command": "\"sleep infinity\"",
+        "CreatedAt": "2026-02-05 19:08:06 +0530 IST",
+        "ID": "23a388adf584",
+        "Image": "alpine",
+        "Labels": "",
+        "LocalVolumes": "0",
+        "Mounts": "",
+        "Names": "cpu-demo",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "",
+        "RunningFor": "4 days ago",
+        "Size": "8.78MB (virtual 17.5MB)",
+        "State": "running",
+        "Status": "Up 20 hours"
+      },
+      {
+        "Command": "\"/bin/prometheus --c\u2026\"",
+        "CreatedAt": "2026-02-05 12:01:06 +0530 IST",
+        "ID": "b891d9428a6b",
+        "Image": "prom/prometheus",
+        "Labels": "maintainer=The Prometheus Authors <prometheus-developers@googlegroups.com>,org.opencontainers.image.authors=The Prometheus Authors,org.opencontainers.image.description=The Prometheus monitoring system and time series database,org.opencontainers.image.documentation=https://prometheus.io/docs,org.opencontainers.image.licenses=Apache License 2.0,org.opencontainers.image.source=https://github.com/prometheus/prometheus,org.opencontainers.image.title=Prometheus,org.opencontainers.image.url=https://github.com/prometheus/prometheus,org.opencontainers.image.vendor=Prometheus",
+        "LocalVolumes": "1",
+        "Mounts": "/root/promethe\u2026,911639d13bd6e7\u2026",
+        "Names": "prometheus",
+        "Networks": "monitoring",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp",
+        "RunningFor": "4 days ago",
+        "Size": "4.1kB (virtual 368MB)",
+        "State": "running",
+        "Status": "Up 16 hours"
+      },
+      {
+        "Command": "\"/bin/node_exporter \u2026\"",
+        "CreatedAt": "2026-02-05 11:46:24 +0530 IST",
+        "ID": "9ec839be96b4",
+        "Image": "prom/node-exporter:latest",
+        "Labels": "maintainer=The Prometheus Authors <prometheus-developers@googlegroups.com>",
+        "LocalVolumes": "0",
+        "Mounts": "/",
+        "Names": "node_exporter",
+        "Networks": "monitoring",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp",
+        "RunningFor": "4 days ago",
+        "Size": "0B (virtual 28.4MB)",
+        "State": "running",
+        "Status": "Up 24 hours"
+      },
+      {
+        "Command": "\"/usr/bin/cadvisor -\u2026\"",
+        "CreatedAt": "2026-02-05 11:28:43 +0530 IST",
+        "ID": "e28d465c19e6",
+        "Image": "gcr.io/cadvisor/cadvisor:latest",
+        "Labels": "",
+        "LocalVolumes": "0",
+        "Mounts": "/var/lib/docker,/var/run,/,/sys",
+        "Names": "cadvisor",
+        "Networks": "monitoring",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp",
+        "RunningFor": "4 days ago",
+        "Size": "0B (virtual 75.8MB)",
+        "State": "running",
+        "Status": "Up 24 hours (healthy)"
+      },
+      {
+        "Command": "\"/run.sh\"",
+        "CreatedAt": "2026-02-04 18:33:05 +0530 IST",
+        "ID": "cb53ed0b5f31",
+        "Image": "grafana/grafana",
+        "Labels": "maintainer=Grafana Labs <hello@grafana.com>,org.opencontainers.image.source=https://github.com/grafana/grafana",
+        "LocalVolumes": "0",
+        "Mounts": "",
+        "Names": "grafana",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp",
+        "RunningFor": "5 days ago",
+        "Size": "52.3MB (virtual 832MB)",
+        "State": "running",
+        "Status": "Up 16 hours"
+      },
+      {
+        "Command": "\"/app/docker/docker-\u2026\"",
+        "CreatedAt": "2026-02-02 12:14:40 +0530 IST",
+        "ID": "f83e46daaea9",
+        "Image": "superset-final:v1",
+        "Labels": "base=3.10-slim-bookworm,build_actor=sadpandajoe,build_trigger=6.0.0,com.docker.compose.config-hash=1fd9eb9ec448f36a0bd809628f85e9863d8fcde6069c9b8e64e51769401f9a79,com.docker.compose.container-number=1,com.docker.compose.depends_on=db:service_started:false,redis:service_started:false,com.docker.compose.image=sha256:fdf035e70a12e3d9b1f514c1e2daf1ae160c636e724a0f4ca882ce555350d9bc,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/superset/docker-compose-non-dev.yml,/root/superset/docker-compose.override.yml,com.docker.compose.project.working_dir=/root/superset,com.docker.compose.project=superset,com.docker.compose.replace=superset_worker,com.docker.compose.service=superset-worker,com.docker.compose.version=5.0.2,sha=6a1c30e5e7c3e28d0549c9c2ac0ff61607f26a2f,target=lean,version=6.0.0",
+        "LocalVolumes": "1",
+        "Mounts": "/root/superset\u2026,superset_super\u2026",
+        "Names": "superset_worker",
+        "Networks": "superset_default",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "8088/tcp",
+        "RunningFor": "7 days ago",
+        "Size": "34.7MB (virtual 929MB)",
+        "State": "running",
+        "Status": "Up 24 hours (healthy)"
+      },
+      {
+        "Command": "\"/app/docker/docker-\u2026\"",
+        "CreatedAt": "2026-02-02 12:14:40 +0530 IST",
+        "ID": "f0debf45934c",
+        "Image": "superset-final:v1",
+        "Labels": "base=3.10-slim-bookworm,build_actor=sadpandajoe,build_trigger=6.0.0,com.docker.compose.config-hash=09c89ba7d322934228525185e2aa4e38512de4be6feb1f082a309a5ba9e00abe,com.docker.compose.container-number=1,com.docker.compose.depends_on=db:service_started:false,redis:service_started:false,com.docker.compose.image=sha256:fdf035e70a12e3d9b1f514c1e2daf1ae160c636e724a0f4ca882ce555350d9bc,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/superset/docker-compose-non-dev.yml,/root/superset/docker-compose.override.yml,com.docker.compose.project.working_dir=/root/superset,com.docker.compose.project=superset,com.docker.compose.replace=superset_app,com.docker.compose.service=superset,com.docker.compose.version=5.0.2,sha=6a1c30e5e7c3e28d0549c9c2ac0ff61607f26a2f,target=lean,version=6.0.0",
+        "LocalVolumes": "1",
+        "Mounts": "/root/superset\u2026,superset_super\u2026",
+        "Names": "superset_app",
+        "Networks": "superset_default",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:8088->8088/tcp, [::]:8088->8088/tcp",
+        "RunningFor": "7 days ago",
+        "Size": "34.9MB (virtual 929MB)",
+        "State": "running",
+        "Status": "Up 24 hours (unhealthy)"
+      },
+      {
+        "Command": "\"/app/docker/docker-\u2026\"",
+        "CreatedAt": "2026-02-02 12:14:40 +0530 IST",
+        "ID": "542cf309b2a8",
+        "Image": "superset-final:v1",
+        "Labels": "base=3.10-slim-bookworm,build_actor=sadpandajoe,build_trigger=6.0.0,com.docker.compose.config-hash=9dc1c81e803bbf7dd4ac590e7249650c096d3ca2135b76f644718b671875a45a,com.docker.compose.container-number=1,com.docker.compose.depends_on=redis:service_started:false,db:service_started:false,com.docker.compose.image=sha256:fdf035e70a12e3d9b1f514c1e2daf1ae160c636e724a0f4ca882ce555350d9bc,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/superset/docker-compose-non-dev.yml,/root/superset/docker-compose.override.yml,com.docker.compose.project.working_dir=/root/superset,com.docker.compose.project=superset,com.docker.compose.replace=superset_worker_beat,com.docker.compose.service=superset-worker-beat,com.docker.compose.version=5.0.2,sha=6a1c30e5e7c3e28d0549c9c2ac0ff61607f26a2f,target=lean,version=6.0.0",
+        "LocalVolumes": "1",
+        "Mounts": "/root/superset\u2026,superset_super\u2026",
+        "Names": "superset_worker_beat",
+        "Networks": "superset_default",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "8088/tcp",
+        "RunningFor": "7 days ago",
+        "Size": "33.8MB (virtual 928MB)",
+        "State": "running",
+        "Status": "Up 24 hours"
+      },
+      {
+        "Command": "\"docker-entrypoint.s\u2026\"",
+        "CreatedAt": "2026-01-29 17:07:23 +0530 IST",
+        "ID": "981ec9b86866",
+        "Image": "mysql:8.0",
+        "Labels": "com.docker.compose.config-hash=d951578e54920d89c74c9d85ec0255fd1030f9955ace4be11b8e9fd944fb4931,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:68bee0989e5623da84778fe2e20d38a0b2432e46645cf8e4667b9ea15e8ee373,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/DB/docker-compose.yml,com.docker.compose.project.working_dir=/root/DB,com.docker.compose.project=db,com.docker.compose.service=mysql,com.docker.compose.version=5.0.2",
+        "LocalVolumes": "0",
+        "Mounts": "/root/DB/mysql\u2026,/root/DB/mysql\u2026",
+        "Names": "mysql_container",
+        "Networks": "db_db_network",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "33060/tcp, 0.0.0.0:3454->3306/tcp, [::]:3454->3306/tcp",
+        "RunningFor": "11 days ago",
+        "Size": "20.5kB (virtual 831MB)",
+        "State": "running",
+        "Status": "Up 20 hours"
+      },
+      {
+        "Command": "\"docker-entrypoint.s\u2026\"",
+        "CreatedAt": "2026-01-29 17:07:23 +0530 IST",
+        "ID": "8bf3c6a9e03d",
+        "Image": "mongo:7.0",
+        "Labels": "com.docker.compose.config-hash=146d878c6e7281264f7f336cd9ff59cd79cecc2806efa4b7d583d7d7661f89b6,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:606f8e029603330411a7dd10b5ffd50eefc297fc80cee89f10a455e496a76ae7,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/DB/docker-compose.yml,com.docker.compose.project.working_dir=/root/DB,com.docker.compose.project=db,com.docker.compose.service=mongodb,com.docker.compose.version=5.0.2,org.opencontainers.image.ref.name=ubuntu,org.opencontainers.image.version=22.04",
+        "LocalVolumes": "0",
+        "Mounts": "/root/DB/mongo\u2026,/root/DB/mongo\u2026",
+        "Names": "mongodb_container",
+        "Networks": "db_db_network",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:3455->27017/tcp, [::]:3455->27017/tcp",
+        "RunningFor": "11 days ago",
+        "Size": "0B (virtual 857MB)",
+        "State": "running",
+        "Status": "Up 24 hours"
+      },
+      {
+        "Command": "\"docker-entrypoint.s\u2026\"",
+        "CreatedAt": "2026-01-23 14:40:02 +0530 IST",
+        "ID": "97d1f70f391e",
+        "Image": "postgres:15",
+        "Labels": "com.docker.compose.config-hash=0010513c64ae63dccd5f7d404cc9d33cd98040fa4181ebf3527e9e8c857da060,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:5f07e69ced9ee30ec814cd12c555694276bb1d520e971205f39a833362748a3c,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/superset/docker-compose-non-dev.yml,/root/superset/docker-compose.override.yml,com.docker.compose.project.working_dir=/root/superset,com.docker.compose.project=superset,com.docker.compose.service=db,com.docker.compose.version=5.0.2",
+        "LocalVolumes": "1",
+        "Mounts": "/root/superset\u2026,superset_db_ho\u2026",
+        "Names": "superset_db",
+        "Networks": "superset_default",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "5432/tcp",
+        "RunningFor": "2 weeks ago",
+        "Size": "4.1kB (virtual 464MB)",
+        "State": "running",
+        "Status": "Up 24 hours"
+      },
+      {
+        "Command": "\"docker-entrypoint.s\u2026\"",
+        "CreatedAt": "2026-01-23 14:40:02 +0530 IST",
+        "ID": "32c30e01f1be",
+        "Image": "redis:7",
+        "Labels": "com.docker.compose.config-hash=e2b2e072a3b77eb0a8f0f31cd347b6df6e468543f9091e6c9a4ca3533522aaad,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:ba125ee995db4c9cf937bb5a771722f443ac96176c7aa5cd03711485ab77c852,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/root/superset/docker-compose-non-dev.yml,/root/superset/docker-compose.override.yml,com.docker.compose.project.working_dir=/root/superset,com.docker.compose.project=superset,com.docker.compose.service=redis,com.docker.compose.version=5.0.2",
+        "LocalVolumes": "1",
+        "Mounts": "superset_redis",
+        "Names": "superset_cache",
+        "Networks": "superset_default",
+        "Platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "Ports": "6379/tcp",
+        "RunningFor": "2 weeks ago",
+        "Size": "0B (virtual 126MB)",
+        "State": "running",
+        "Status": "Up 24 hours"
+      }
+    ],
+    "networks": [
+      {
+        "CreatedAt": "2026-02-06 14:27:32.748232857 +0530 IST",
+        "Driver": "bridge",
+        "ID": "2be58a71eab7",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.network=default,com.docker.compose.project=beyla,com.docker.compose.version=5.0.2,com.docker.compose.config-hash=12515424164207ef525d76af479940f6ae70e54ac9f85dbf2a296428f5962904",
+        "Name": "beyla_default",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-02-09 10:20:21.167621574 +0530 IST",
+        "Driver": "bridge",
+        "ID": "f4887441f9ca",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "bridge",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-01-29 17:07:23.701686685 +0530 IST",
+        "Driver": "bridge",
+        "ID": "d20a37cbbb02",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.version=5.0.2,com.docker.compose.config-hash=32f068a1fae0d98b8999ee1a6b99a100f7c565faf57a76e697ba131990a6c313,com.docker.compose.network=db_network,com.docker.compose.project=db",
+        "Name": "db_db_network",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-01-28 11:07:40.981415294 +0530 IST",
+        "Driver": "bridge",
+        "ID": "4bf93b41b285",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.version=5.0.2,com.docker.compose.config-hash=e7869dccd0af1856c658cbabad8f131128ffb37f03d845c4244677d8b7adea0c,com.docker.compose.network=default,com.docker.compose.project=docker",
+        "Name": "docker_default",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-01-21 17:34:33.124076131 +0530 IST",
+        "Driver": "host",
+        "ID": "07166a33c092",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "host",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-02-09 11:47:02.778588381 +0530 IST",
+        "Driver": "bridge",
+        "ID": "95cbc136e32d",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.config-hash=012271f443e5e99042000f8d2125bca69e4326fbeee445a7a6231b29d99cad06,com.docker.compose.network=default,com.docker.compose.project=kimai-backup2,com.docker.compose.version=5.0.2",
+        "Name": "kimai-backup2_default",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-02-03 09:48:34.320120069 +0530 IST",
+        "Driver": "bridge",
+        "ID": "68c215f1df76",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "created_by.minikube.sigs.k8s.io=true,name.minikube.sigs.k8s.io=minikube",
+        "Name": "minikube",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-02-05 10:07:06.122415693 +0530 IST",
+        "Driver": "bridge",
+        "ID": "fea630ca48ac",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "monitoring",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-01-21 17:34:33.104920378 +0530 IST",
+        "Driver": "null",
+        "ID": "ca1fe6c6ab06",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "",
+        "Name": "none",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-01-27 15:51:29.471849635 +0530 IST",
+        "Driver": "bridge",
+        "ID": "9cdecca310cb",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.config-hash=dfaa3a4f1422d17b01c523a4e1e2ac3469d3fbd454a7d501468372ce081907c6,com.docker.compose.network=opencatsnet,com.docker.compose.project=opencats,com.docker.compose.version=5.0.2",
+        "Name": "opencats_opencatsnet",
+        "Scope": "local"
+      },
+      {
+        "CreatedAt": "2026-01-23 14:40:02.797505746 +0530 IST",
+        "Driver": "bridge",
+        "ID": "0d5b976dff58",
+        "IPv4": "true",
+        "IPv6": "false",
+        "Internal": "false",
+        "Labels": "com.docker.compose.config-hash=c7a2d11fd41158b0a380bf7c8f2c0b553435d0e26e61ec1b9b44ba858a1385fc,com.docker.compose.network=default,com.docker.compose.project=superset,com.docker.compose.version=5.0.2",
+        "Name": "superset_default",
+        "Scope": "local"
+      }
+    ],
+    "container_ports": {
+      "myapp_container": "80/tcp -> 0.0.0.0:3001\n80/tcp -> [::]:3001",
+      "Grafana-APM-Application": "8080/tcp -> 0.0.0.0:8085\n8080/tcp -> [::]:8085",
+      "boring_northcutt": "3000/tcp -> 0.0.0.0:3005\n3000/tcp -> [::]:3005",
+      "jenkins": "8080/tcp -> 0.0.0.0:8080\n8080/tcp -> [::]:8080\n50000/tcp -> 0.0.0.0:50000\n50000/tcp -> [::]:50000",
+      "kimai-backup2-kimai-1": "8001/tcp -> 0.0.0.0:8001\n8001/tcp -> [::]:8001",
+      "kimai-backup2-sqldb-1": "",
+      "cpu-demo": "",
+      "prometheus": "9090/tcp -> 0.0.0.0:9090\n9090/tcp -> [::]:9090",
+      "node_exporter": "9100/tcp -> 0.0.0.0:9100\n9100/tcp -> [::]:9100",
+      "cadvisor": "8080/tcp -> 0.0.0.0:8081\n8080/tcp -> [::]:8081",
+      "grafana": "3000/tcp -> 0.0.0.0:3000\n3000/tcp -> [::]:3000",
+      "superset_worker": "",
+      "superset_app": "8088/tcp -> 0.0.0.0:8088\n8088/tcp -> [::]:8088",
+      "superset_worker_beat": "",
+      "mysql_container": "3306/tcp -> 0.0.0.0:3454\n3306/tcp -> [::]:3454",
+      "mongodb_container": "27017/tcp -> 0.0.0.0:3455\n27017/tcp -> [::]:3455",
+      "superset_db": "",
+      "superset_cache": ""
+    },
+    "version": "Docker version 29.2.1, build a5c7197"
+  },
+  "firewall": {
+    "iptables": {
+      "input_rules": [],
+      "output_rules": [],
+      "forward_rules": [
+        {
+          "rule_number": "1",
+          "pkts": "853K",
+          "bytes": "838M",
+          "target": "DOCKER-USER",
+          "prot": "all",
+          "opt": "--",
+          "source": "*",
+          "destination": "*",
+          "extra": "0.0.0.0/0 0.0.0.0/0",
+          "raw_line": "1     853K  838M DOCKER-USER  all  --  *      *       0.0.0.0/0            0.0.0.0/0"
+        },
+        {
+          "rule_number": "2",
+          "pkts": "853K",
+          "bytes": "838M",
+          "target": "DOCKER-FORWARD",
+          "prot": "all",
+          "opt": "--",
+          "source": "*",
+          "destination": "*",
+          "extra": "0.0.0.0/0 0.0.0.0/0",
+          "raw_line": "2     853K  838M DOCKER-FORWARD  all  --  *      *       0.0.0.0/0            0.0.0.0/0"
+        }
+      ],
+      "nat_rules": "Chain PREROUTING (policy ACCEPT 8551 packets, 534K bytes)\nnum   pkts bytes target     prot opt in     out     source               destination         \n1     6071  347K DOCKER     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ADDRTYPE match dst-type LOCAL\n\nChain INPUT (policy ACCEPT 0 packets, 0 bytes)\nnum   pkts bytes target     prot opt in     out     source               destination         \n\nChain OUTPUT (policy ACCEPT 8154 packets, 503K bytes)\nnum   pkts bytes target     prot opt in     out     source               destination         \n1        0     0 DOCKER     all  --  *      *       0.0.0.0/0           !127.0.0.0/8          ADDRTYPE match dst-type LOCAL\n\nChain POSTROUTING (policy ACCEPT 9077 packets, 551K bytes)\nnum   pkts bytes target     prot opt in     out     source               destination         \n1       15   900 MASQUERADE  all  --  *      !br-95cbc136e32d  172.25.0.0/16        0.0.0.0/0           \n2     1016 64622 MASQUERADE  all  --  *      !docker0  172.17.0.0/16        0.0.0.0/0           \n3     9571  574K MASQUERADE  all  --  *      !br-fea630ca48ac  172.23.0.0/16        0.0.0.0/0           \n4        0     0 MASQUERADE  all  --  *      !br-d20a37cbbb02  172.22.0.0/16        0.0.0.0/0           \n5        0     0 MASQUERADE  all  --  *      !br-9cdecca310cb  172.20.0.0/16        0.0.0.0/0           \n6        0     0 MASQUERADE  all  --  *      !br-68c215f1df76  192.168.49.0/24      0.0.0.0/0           \n7        0     0 MASQUERADE  all  --  *      !br-4bf93b41b285  172.21.0.0/16        0.0.0.0/0           \n8       14   840 MASQUERADE  all  --  *      !br-2be58a71eab7  172.24.0.0/16        0.0.0.0/0           \n9        3   180 MASQUERADE  all  --  *      !br-0d5b976dff58  172.19.0.0/16        0.0.0.0/0           \n\nChain DOCKER (2 references)\nnum   pkts bytes target     prot opt in     out     source               destination         \n1        0     0 DNAT       tcp  --  !br-fea630ca48ac *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9100 to:172.23.0.2:9100\n2        0     0 DNAT       tcp  --  !br-fea630ca48ac *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8081 to:172.23.0.3:8080\n3        2   104 DNAT       tcp  --  !br-d20a37cbbb02 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:3455 to:172.22.0.3:27017\n4        0     0 DNAT       tcp  --  !br-0d5b976dff58 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8088 to:172.19.0.3:8088\n5        0     0 DNAT       tcp  --  !br-95cbc136e32d *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8001 to:172.25.0.3:8001\n6        0     0 DNAT       tcp  --  !br-d20a37cbbb02 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:3454 to:172.22.0.2:3306\n7        2   104 DNAT       tcp  --  !docker0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8080 to:172.17.0.2:8080\n8        0     0 DNAT       tcp  --  !docker0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:50000 to:172.17.0.2:50000\n9     3876  232K DNAT       tcp  --  !docker0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:3005 to:172.17.0.3:3000\n10     545 28340 DNAT       tcp  --  !docker0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:3000 to:172.17.0.8:3000\n11       7   372 DNAT       tcp  --  !docker0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8085 to:172.17.0.9:8080\n12      43  2468 DNAT       tcp  --  !br-fea630ca48ac *       0.0.0.0/0            0.0.0.0/0            tcp dpt:9090 to:172.23.0.4:9090\n13       0     0 DNAT       tcp  --  !docker0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:3001 to:172.17.0.5:80\n",
+      "raw_output": "# Generated by iptables-save v1.8.10 (nf_tables) on Tue Feb 10 09:55:06 2026\n*raw\n:PREROUTING ACCEPT [1644653:2373466073]\n:OUTPUT ACCEPT [0:0]\n-A PREROUTING -d 172.23.0.2/32 ! -i br-fea630ca48ac -j DROP\n-A PREROUTING -d 172.23.0.3/32 ! -i br-fea630ca48ac -j DROP\n-A PREROUTING -d 172.22.0.3/32 ! -i br-d20a37cbbb02 -j DROP\n-A PREROUTING -d 172.19.0.2/32 ! -i br-0d5b976dff58 -j DROP\n-A PREROUTING -d 172.19.0.3/32 ! -i br-0d5b976dff58 -j DROP\n-A PREROUTING -d 172.19.0.4/32 ! -i br-0d5b976dff58 -j DROP\n-A PREROUTING -d 172.19.0.5/32 ! -i br-0d5b976dff58 -j DROP\n-A PREROUTING -d 172.19.0.6/32 ! -i br-0d5b976dff58 -j DROP\n-A PREROUTING -d 172.25.0.3/32 ! -i br-95cbc136e32d -j DROP\n-A PREROUTING -d 172.25.0.2/32 ! -i br-95cbc136e32d -j DROP\n-A PREROUTING -d 172.17.0.4/32 ! -i docker0 -j DROP\n-A PREROUTING -d 172.22.0.2/32 ! -i br-d20a37cbbb02 -j DROP\n-A PREROUTING -d 172.17.0.2/32 ! -i docker0 -j DROP\n-A PREROUTING -d 172.17.0.3/32 ! -i docker0 -j DROP\n-A PREROUTING -d 172.17.0.8/32 ! -i docker0 -j DROP\n-A PREROUTING -d 172.17.0.9/32 ! -i docker0 -j DROP\n-A PREROUTING -d 172.23.0.4/32 ! -i br-fea630ca48ac -j DROP\n-A PREROUTING -d 172.17.0.5/32 ! -i docker0 -j DROP\nCOMMIT\n# Completed on Tue Feb 10 09:55:06 2026\n# Generated by iptables-save v1.8.10 (nf_tables) on Tue Feb 10 09:55:06 2026\n*filter\n:INPUT ACCEPT [0:0]\n:FORWARD DROP [2:674]\n:OUTPUT ACCEPT [0:0]\n:DOCKER - [0:0]\n:DOCKER-BRIDGE - [0:0]\n:DOCKER-CT - [0:0]\n:DOCKER-FORWARD - [0:0]\n:DOCKER-INTERNAL - [0:0]\n:DOCKER-USER - [0:0]\n-A FORWARD -j DOCKER-USER\n-A FORWARD -j DOCKER-FORWARD\n-A DOCKER -d 172.17.0.5/32 ! -i docker0 -o docker0 -p tcp -m tcp --dport 80 -j ACCEPT\n-A DOCKER -d 172.23.0.4/32 ! -i br-fea630ca48ac -o br-fea630ca48ac -p tcp -m tcp --dport 9090 -j ACCEPT\n-A DOCKER -d 172.17.0.9/32 ! -i docker0 -o docker0 -p tcp -m tcp --dport 8080 -j ACCEPT\n-A DOCKER -d 172.17.0.8/32 ! -i docker0 -o docker0 -p tcp -m tcp --dport 3000 -j ACCEPT\n-A DOCKER -d 172.17.0.3/32 ! -i docker0 -o docker0 -p tcp -m tcp --dport 3000 -j ACCEPT\n-A DOCKER -d 172.17.0.2/32 ! -i docker0 -o docker0 -p tcp -m tcp --dport 50000 -j ACCEPT\n-A DOCKER -d 172.17.0.2/32 ! -i docker0 -o docker0 -p tcp -m tcp --dport 8080 -j ACCEPT\n-A DOCKER -d 172.22.0.2/32 ! -i br-d20a37cbbb02 -o br-d20a37cbbb02 -p tcp -m tcp --dport 3306 -j ACCEPT\n-A DOCKER -d 172.25.0.3/32 ! -i br-95cbc136e32d -o br-95cbc136e32d -p tcp -m tcp --dport 8001 -j ACCEPT\n-A DOCKER -d 172.19.0.3/32 ! -i br-0d5b976dff58 -o br-0d5b976dff58 -p tcp -m tcp --dport 8088 -j ACCEPT\n-A DOCKER -d 172.22.0.3/32 ! -i br-d20a37cbbb02 -o br-d20a37cbbb02 -p tcp -m tcp --dport 27017 -j ACCEPT\n-A DOCKER -d 172.23.0.3/32 ! -i br-fea630ca48ac -o br-fea630ca48ac -p tcp -m tcp --dport 8080 -j ACCEPT\n-A DOCKER -d 172.23.0.2/32 ! -i br-fea630ca48ac -o br-fea630ca48ac -p tcp -m tcp --dport 9100 -j ACCEPT\n-A DOCKER ! -i br-0d5b976dff58 -o br-0d5b976dff58 -j DROP\n-A DOCKER ! -i br-2be58a71eab7 -o br-2be58a71eab7 -j DROP\n-A DOCKER ! -i br-4bf93b41b285 -o br-4bf93b41b285 -j DROP\n-A DOCKER ! -i br-68c215f1df76 -o br-68c215f1df76 -j DROP\n-A DOCKER ! -i br-9cdecca310cb -o br-9cdecca310cb -j DROP\n-A DOCKER ! -i br-d20a37cbbb02 -o br-d20a37cbbb02 -j DROP\n-A DOCKER ! -i br-fea630ca48ac -o br-fea630ca48ac -j DROP\n-A DOCKER ! -i docker0 -o docker0 -j DROP\n-A DOCKER ! -i br-95cbc136e32d -o br-95cbc136e32d -j DROP\n-A DOCKER-BRIDGE -o br-0d5b976dff58 -j DOCKER\n-A DOCKER-BRIDGE -o br-2be58a71eab7 -j DOCKER\n-A DOCKER-BRIDGE -o br-4bf93b41b285 -j DOCKER\n-A DOCKER-BRIDGE -o br-68c215f1df76 -j DOCKER\n-A DOCKER-BRIDGE -o br-9cdecca310cb -j DOCKER\n-A DOCKER-BRIDGE -o br-d20a37cbbb02 -j DOCKER\n-A DOCKER-BRIDGE -o br-fea630ca48ac -j DOCKER\n-A DOCKER-BRIDGE -o docker0 -j DOCKER\n-A DOCKER-BRIDGE -o br-95cbc136e32d -j DOCKER\n-A DOCKER-CT -o br-0d5b976dff58 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o br-2be58a71eab7 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o br-4bf93b41b285 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o br-68c215f1df76 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o br-9cdecca310cb -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o br-d20a37cbbb02 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o br-fea630ca48ac -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-CT -o br-95cbc136e32d -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A DOCKER-FORWARD -j DOCKER-CT\n-A DOCKER-FORWARD -j DOCKER-INTERNAL\n-A DOCKER-FORWARD -j DOCKER-BRIDGE\n-A DOCKER-FORWARD -i br-0d5b976dff58 -j ACCEPT\n-A DOCKER-FORWARD -i br-2be58a71eab7 -j ACCEPT\n-A DOCKER-FORWARD -i br-4bf93b41b285 -j ACCEPT\n-A DOCKER-FORWARD -i br-68c215f1df76 -j ACCEPT\n-A DOCKER-FORWARD -i br-9cdecca310cb -j ACCEPT\n-A DOCKER-FORWARD -i br-d20a37cbbb02 -j ACCEPT\n-A DOCKER-FORWARD -i br-fea630ca48ac -j ACCEPT\n-A DOCKER-FORWARD -i docker0 -j ACCEPT\n-A DOCKER-FORWARD -i br-95cbc136e32d -j ACCEPT\nCOMMIT\n# Completed on Tue Feb 10 09:55:06 2026\n# Generated by iptables-save v1.8.10 (nf_tables) on Tue Feb 10 09:55:06 2026\n*nat\n:PREROUTING ACCEPT [8551:534230]\n:INPUT ACCEPT [0:0]\n:OUTPUT ACCEPT [8154:503052]\n:POSTROUTING ACCEPT [9077:551048]\n:DOCKER - [0:0]\n-A PREROUTING -m addrtype --dst-type LOCAL -j DOCKER\n-A OUTPUT ! -d 127.0.0.0/8 -m addrtype --dst-type LOCAL -j DOCKER\n-A POSTROUTING -s 172.25.0.0/16 ! -o br-95cbc136e32d -j MASQUERADE\n-A POSTROUTING -s 172.17.0.0/16 ! -o docker0 -j MASQUERADE\n-A POSTROUTING -s 172.23.0.0/16 ! -o br-fea630ca48ac -j MASQUERADE\n-A POSTROUTING -s 172.22.0.0/16 ! -o br-d20a37cbbb02 -j MASQUERADE\n-A POSTROUTING -s 172.20.0.0/16 ! -o br-9cdecca310cb -j MASQUERADE\n-A POSTROUTING -s 192.168.49.0/24 ! -o br-68c215f1df76 -j MASQUERADE\n-A POSTROUTING -s 172.21.0.0/16 ! -o br-4bf93b41b285 -j MASQUERADE\n-A POSTROUTING -s 172.24.0.0/16 ! -o br-2be58a71eab7 -j MASQUERADE\n-A POSTROUTING -s 172.19.0.0/16 ! -o br-0d5b976dff58 -j MASQUERADE\n-A DOCKER ! -i br-fea630ca48ac -p tcp -m tcp --dport 9100 -j DNAT --to-destination 172.23.0.2:9100\n-A DOCKER ! -i br-fea630ca48ac -p tcp -m tcp --dport 8081 -j DNAT --to-destination 172.23.0.3:8080\n-A DOCKER ! -i br-d20a37cbbb02 -p tcp -m tcp --dport 3455 -j DNAT --to-destination 172.22.0.3:27017\n-A DOCKER ! -i br-0d5b976dff58 -p tcp -m tcp --dport 8088 -j DNAT --to-destination 172.19.0.3:8088\n-A DOCKER ! -i br-95cbc136e32d -p tcp -m tcp --dport 8001 -j DNAT --to-destination 172.25.0.3:8001\n-A DOCKER ! -i br-d20a37cbbb02 -p tcp -m tcp --dport 3454 -j DNAT --to-destination 172.22.0.2:3306\n-A DOCKER ! -i docker0 -p tcp -m tcp --dport 8080 -j DNAT --to-destination 172.17.0.2:8080\n-A DOCKER ! -i docker0 -p tcp -m tcp --dport 50000 -j DNAT --to-destination 172.17.0.2:50000\n-A DOCKER ! -i docker0 -p tcp -m tcp --dport 3005 -j DNAT --to-destination 172.17.0.3:3000\n-A DOCKER ! -i docker0 -p tcp -m tcp --dport 3000 -j DNAT --to-destination 172.17.0.8:3000\n-A DOCKER ! -i docker0 -p tcp -m tcp --dport 8085 -j DNAT --to-destination 172.17.0.9:8080\n-A DOCKER ! -i br-fea630ca48ac -p tcp -m tcp --dport 9090 -j DNAT --to-destination 172.23.0.4:9090\n-A DOCKER ! -i docker0 -p tcp -m tcp --dport 3001 -j DNAT --to-destination 172.17.0.5:80\nCOMMIT\n# Completed on Tue Feb 10 09:55:06 2026\n"
+    },
+    "ip6tables": {
+      "input_rules": [],
+      "output_rules": [],
+      "forward_rules": [],
+      "raw_output": "# Generated by ip6tables-save v1.8.10 (nf_tables) on Tue Feb 10 09:55:06 2026\n*filter\n:INPUT ACCEPT [0:0]\n:FORWARD ACCEPT [0:0]\n:OUTPUT ACCEPT [0:0]\n:DOCKER - [0:0]\n:DOCKER-BRIDGE - [0:0]\n:DOCKER-CT - [0:0]\n:DOCKER-FORWARD - [0:0]\n:DOCKER-INTERNAL - [0:0]\n:DOCKER-USER - [0:0]\n-A FORWARD -j DOCKER-USER\n-A FORWARD -j DOCKER-FORWARD\n-A DOCKER-FORWARD -j DOCKER-CT\n-A DOCKER-FORWARD -j DOCKER-INTERNAL\n-A DOCKER-FORWARD -j DOCKER-BRIDGE\nCOMMIT\n# Completed on Tue Feb 10 09:55:06 2026\n# Generated by ip6tables-save v1.8.10 (nf_tables) on Tue Feb 10 09:55:06 2026\n*nat\n:PREROUTING ACCEPT [0:0]\n:INPUT ACCEPT [0:0]\n:OUTPUT ACCEPT [0:0]\n:POSTROUTING ACCEPT [0:0]\n:DOCKER - [0:0]\n-A PREROUTING -m addrtype --dst-type LOCAL -j DOCKER\n-A OUTPUT ! -d ::1/128 -m addrtype --dst-type LOCAL -j DOCKER\nCOMMIT\n# Completed on Tue Feb 10 09:55:06 2026\n"
+    },
+    "ufw": {
+      "status": null,
+      "rules": [],
+      "default_policies": {}
+    },
+    "firewalld": {
+      "status": null,
+      "zones": [],
+      "services": [],
+      "ports": []
+    }
+  },
+  "users": [
+    {
+      "name": "root",
+      "terminal": "tty1",
+      "host": "",
+      "started": "2026-02-09T10:22:16",
+      "pid": 862
+    },
+    {
+      "name": "shakthivel",
+      "terminal": "pts/0",
+      "host": "10.10.2.16",
+      "started": "2026-02-10T09:11:52",
+      "pid": 378650
+    },
+    {
+      "name": "shakthivel",
+      "terminal": "pts/1",
+      "host": "10.10.2.16",
+      "started": "2026-02-10T09:20:24",
+      "pid": 382580
+    },
+    {
+      "name": "root",
+      "terminal": "pts/2",
+      "host": "10.10.3.17",
+      "started": "2026-02-10T09:18:16",
+      "pid": 381751
+    },
+    {
+      "name": "root",
+      "terminal": "pts/3",
+      "host": "10.10.4.12",
+      "started": "2026-02-10T09:37:28",
+      "pid": 389368
+    }
+  ],
+  "packages": [
+    {
+      "name": "grub2-tools",
+      "version": "2.06-120.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "shim-x64",
+      "version": "15.8-2.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "grub2-efi-x64",
+      "version": "2.06-120.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "kernel",
+      "version": "5.14.0-661.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "langpacks-en",
+      "version": "3.0-16.el9",
+      "architecture": "noarch",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "efibootmgr",
+      "version": "16-12.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "docker-compose-plugin",
+      "version": "5.0.2-1.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "containerd.io",
+      "version": "2.2.1-1.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "epel-release",
+      "version": "9-10.el9",
+      "architecture": "noarch",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "nginx",
+      "version": "1.20.1-26.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "kernel",
+      "version": "5.14.0-665.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "git",
+      "version": "2.52.0-1.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "rpm-build",
+      "version": "4.16.1.3-40.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "rpmdevtools",
+      "version": "9.5-1.el9",
+      "architecture": "noarch",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "nginx-mod-stream",
+      "version": "1.20.1-26.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "kubectl",
+      "version": "1.35.0-150500.1.1",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "wazuh-agent",
+      "version": "4.14.2-1",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "docker-buildx-plugin",
+      "version": "0.31.1-1.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "docker-ce-cli",
+      "version": "29.2.1-1.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "docker-ce",
+      "version": "29.2.1-1.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "kernel",
+      "version": "5.14.0-669.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "nodejs",
+      "version": "24.13.0-1nodesource",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "yum-utils",
+      "version": "4.3.0-25.el9",
+      "architecture": "noarch",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "swaks",
+      "version": "20240103.0-1.el9",
+      "architecture": "noarch",
+      "source": "dnf/yum"
+    },
+    {
+      "name": "sysstat",
+      "version": "12.5.4-9.el9",
+      "architecture": "x86_64",
+      "source": "dnf/yum"
+    }
+  ],
+  "services": [
+    {
+      "name": "atd.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "auditd.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "chronyd.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "containerd.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "crond.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "dbus-broker.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "docker.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "getty@tty1.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "irqbalance.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "libstoragemgmt.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "mcelog.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "NetworkManager.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "nginx.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "polkit.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "rsyslog.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "smartd.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "sshd.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "systemd-journald.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "systemd-logind.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "systemd-udevd.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "tuned.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "user@0.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "user@1001.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    },
+    {
+      "name": "wazuh-agent.service",
+      "load": "loaded",
+      "active": "active",
+      "sub": "running"
+    }
+  ],
+  "top_processes": [
+    {
+      "pid": 88205,
+      "memory_percent": 6.306524668993941,
+      "cpu_percent": 0.0,
+      "name": "java",
+      "username": "root"
+    },
+    {
+      "pid": 73452,
+      "memory_percent": 2.684793582089403,
+      "cpu_percent": 0.0,
+      "name": "mysqld",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 73838,
+      "memory_percent": 2.550445093466126,
+      "cpu_percent": 0.0,
+      "name": "mysqld",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 7201,
+      "memory_percent": 1.8057127248604987,
+      "cpu_percent": 0.0,
+      "name": "gunicorn",
+      "username": "root"
+    },
+    {
+      "pid": 140906,
+      "memory_percent": 1.8049122870210006,
+      "cpu_percent": 0.0,
+      "name": "grafana",
+      "username": "472"
+    },
+    {
+      "pid": 7126,
+      "memory_percent": 1.606278634413024,
+      "cpu_percent": 0.0,
+      "name": "celery",
+      "username": "root"
+    },
+    {
+      "pid": 7111,
+      "memory_percent": 1.6030268556900622,
+      "cpu_percent": 0.0,
+      "name": "celery",
+      "username": "root"
+    },
+    {
+      "pid": 152240,
+      "memory_percent": 1.3592435061978902,
+      "cpu_percent": 0.0,
+      "name": "prometheus",
+      "username": "nobody"
+    },
+    {
+      "pid": 4092,
+      "memory_percent": 1.238752597670926,
+      "cpu_percent": 0.0,
+      "name": "mongod",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 8207,
+      "memory_percent": 1.2124382036974226,
+      "cpu_percent": 0.0,
+      "name": "celery",
+      "username": "root"
+    },
+    {
+      "pid": 8209,
+      "memory_percent": 1.1923021892975458,
+      "cpu_percent": 0.0,
+      "name": "celery",
+      "username": "root"
+    },
+    {
+      "pid": 8208,
+      "memory_percent": 1.1890003832096157,
+      "cpu_percent": 0.0,
+      "name": "celery",
+      "username": "root"
+    },
+    {
+      "pid": 8210,
+      "memory_percent": 1.186599069691121,
+      "cpu_percent": 0.0,
+      "name": "celery",
+      "username": "root"
+    },
+    {
+      "pid": 1144,
+      "memory_percent": 0.8851841957550781,
+      "cpu_percent": 0.0,
+      "name": "dockerd",
+      "username": "root"
+    },
+    {
+      "pid": 3861,
+      "memory_percent": 0.6429516945769336,
+      "cpu_percent": 0.0,
+      "name": "cadvisor",
+      "username": "root"
+    },
+    {
+      "pid": 855,
+      "memory_percent": 0.5102290953151374,
+      "cpu_percent": 0.0,
+      "name": "containerd",
+      "username": "root"
+    },
+    {
+      "pid": 139906,
+      "memory_percent": 0.4324865701538742,
+      "cpu_percent": 0.0,
+      "name": "node",
+      "username": "root"
+    },
+    {
+      "pid": 139847,
+      "memory_percent": 0.3672508862347704,
+      "cpu_percent": 0.0,
+      "name": "npm start",
+      "username": "root"
+    },
+    {
+      "pid": 73678,
+      "memory_percent": 0.35141722522219654,
+      "cpu_percent": 0.0,
+      "name": "apache2",
+      "username": "33"
+    },
+    {
+      "pid": 73679,
+      "memory_percent": 0.3310811013624453,
+      "cpu_percent": 0.0,
+      "name": "apache2",
+      "username": "33"
+    },
+    {
+      "pid": 73680,
+      "memory_percent": 0.24973660592344013,
+      "cpu_percent": 0.0,
+      "name": "apache2",
+      "username": "33"
+    },
+    {
+      "pid": 73681,
+      "memory_percent": 0.24973660592344013,
+      "cpu_percent": 0.0,
+      "name": "apache2",
+      "username": "33"
+    },
+    {
+      "pid": 73682,
+      "memory_percent": 0.24973660592344013,
+      "cpu_percent": 0.0,
+      "name": "apache2",
+      "username": "33"
+    },
+    {
+      "pid": 74640,
+      "memory_percent": 0.24973660592344013,
+      "cpu_percent": 0.0,
+      "name": "apache2",
+      "username": "33"
+    },
+    {
+      "pid": 73288,
+      "memory_percent": 0.24183228225839534,
+      "cpu_percent": 0.0,
+      "name": "apache2",
+      "username": "root"
+    },
+    {
+      "pid": 149179,
+      "memory_percent": 0.19368094347608142,
+      "cpu_percent": 0.0,
+      "name": "hotrod-linux",
+      "username": "root"
+    },
+    {
+      "pid": 4277,
+      "memory_percent": 0.17784728246350753,
+      "cpu_percent": 0.0,
+      "name": "postgres",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 841,
+      "memory_percent": 0.17194405339720828,
+      "cpu_percent": 0.0,
+      "name": "tuned",
+      "username": "root"
+    },
+    {
+      "pid": 1126,
+      "memory_percent": 0.15801143225344264,
+      "cpu_percent": 0.0,
+      "name": "polkitd",
+      "username": "polkitd"
+    },
+    {
+      "pid": 3804,
+      "memory_percent": 0.1576862543811465,
+      "cpu_percent": 0.0,
+      "name": "node_exporter",
+      "username": "nobody"
+    },
+    {
+      "pid": 3971,
+      "memory_percent": 0.1529336547091259,
+      "cpu_percent": 0.0,
+      "name": "wazuh-modulesd",
+      "username": "root"
+    },
+    {
+      "pid": 7108,
+      "memory_percent": 0.13659972004686563,
+      "cpu_percent": 0.0,
+      "name": "gunicorn",
+      "username": "root"
+    },
+    {
+      "pid": 794,
+      "memory_percent": 0.13514892646277513,
+      "cpu_percent": 0.0,
+      "name": "NetworkManager",
+      "username": "root"
+    },
+    {
+      "pid": 396932,
+      "memory_percent": 0.13014618996591135,
+      "cpu_percent": 0.0,
+      "name": "python",
+      "username": "root"
+    },
+    {
+      "pid": 8018,
+      "memory_percent": 0.12174159265118019,
+      "cpu_percent": 0.0,
+      "name": "postgres",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 1,
+      "memory_percent": 0.12154148319130564,
+      "cpu_percent": 0.0,
+      "name": "systemd",
+      "username": "root"
+    },
+    {
+      "pid": 8020,
+      "memory_percent": 0.10630815055835542,
+      "cpu_percent": 0.0,
+      "name": "postgres",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 4307,
+      "memory_percent": 0.1031063992003626,
+      "cpu_percent": 0.0,
+      "name": "redis-server",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 3296,
+      "memory_percent": 0.09997968888982274,
+      "cpu_percent": 0.0,
+      "name": "wazuh-logcollector",
+      "username": "root"
+    },
+    {
+      "pid": 324563,
+      "memory_percent": 0.09890410054299703,
+      "cpu_percent": 0.0,
+      "name": "postgres",
+      "username": "systemd-coredump"
+    },
+    {
+      "pid": 73724,
+      "memory_percent": 0.09607755442226898,
+      "cpu_percent": 0.0,
+      "name": "containerd-shim-runc-v2",
+      "username": "root"
+    },
+    {
+      "pid": 378659,
+      "memory_percent": 0.09595248600984739,
+      "cpu_percent": 0.0,
+      "name": "systemd",
+      "username": "shakthivel"
+    },
+    {
+      "pid": 8419,
+      "memory_percent": 0.09580240391494148,
+      "cpu_percent": 0.0,
+      "name": "systemd",
+      "username": "root"
+    },
+    {
+      "pid": 73430,
+      "memory_percent": 0.09202533785980932,
+      "cpu_percent": 0.0,
+      "name": "containerd-shim-runc-v2",
+      "username": "root"
+    },
+    {
+      "pid": 646,
+      "memory_percent": 0.09152506421012294,
+      "cpu_percent": 0.0,
+      "name": "systemd-journald",
+      "username": "root"
+    },
+    {
+      "pid": 4493,
+      "memory_percent": 0.09054953059323449,
+      "cpu_percent": 0.0,
+      "name": "containerd-shim-runc-v2",
+      "username": "root"
+    },
+    {
+      "pid": 3828,
+      "memory_percent": 0.08997421589609517,
+      "cpu_percent": 0.0,
+      "name": "containerd-shim-runc-v2",
+      "username": "root"
+    },
+    {
+      "pid": 73263,
+      "memory_percent": 0.08937388751647152,
+      "cpu_percent": 0.0,
+      "name": "containerd-shim-runc-v2",
+      "username": "root"
+    },
+    {
+      "pid": 4344,
+      "memory_percent": 0.08914876437411265,
+      "cpu_percent": 0.0,
+      "name": "containerd-shim-runc-v2",
+      "username": "root"
+    },
+    {
+      "pid": 73815,
+      "memory_percent": 0.08832331285213012,
+      "cpu_percent": 0.0,
+      "name": "containerd-shim-runc-v2",
+      "username": "root"
+    }
+  ]
+}
