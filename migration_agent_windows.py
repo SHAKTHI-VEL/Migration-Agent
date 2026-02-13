@@ -206,7 +206,7 @@ class WindowsServerInventory:
             return False
     
     def setup_performance_monitor(self):
-        """Setup Performance Monitor data collector set via CLI to output CSV format"""
+        """Setup Performance Monitor data collector set via CLI with proper CSV format and counters"""
         result = {
             'success': False,
             'message': '',
@@ -255,34 +255,39 @@ class WindowsServerInventory:
                     print(f"  Created directory: {perf_log_dir}")
             except Exception as dir_error:
                 print(f"  Warning: Could not create directory: {dir_error}")
-                # Continue anyway, logman might create it
             
-            # Create the data collector set - CHANGED TO CSV FORMAT
+            # Clean old CSV files to ensure fresh start
+            print(f"  Cleaning old CSV files...")
+            if os.path.exists(perf_log_dir):
+                try:
+                    for file in os.listdir(perf_log_dir):
+                        if file.endswith('.csv') or file.endswith('.blg'):
+                            file_path = os.path.join(perf_log_dir, file)
+                            try:
+                                os.remove(file_path)
+                                print(f"    Deleted: {file}")
+                            except Exception as e:
+                                print(f"    Could not delete {file}: {e}")
+                except Exception as e:
+                    print(f"  Warning: Could not clean directory: {e}")
+            
+            # Create the data collector set with PROPER counter format
             print(f"  Creating Performance Monitor data collector '{collector_name}'...")
             
-            # Build the counter list - all counters must be space-separated in a single -c argument
-            counters = [
-                r'\Processor(_Total)\% Processor Time',
-                r'\Processor(_Total)\% User Time',
-                r'\Processor(_Total)\% Privileged Time',
-                r'\Memory\Available MBytes',
-                r'\Memory\% Committed Bytes In Use',
-                r'\PhysicalDisk(_Total)\% Disk Time',
-                r'\PhysicalDisk(_Total)\Avg. Disk Queue Length'
-            ]
-            
-            # Join all counters with space separator
-            counter_string = ' '.join(f'"{c}"' for c in counters)
-            
-            # Build command with CSV format instead of bincirc
+            # CRITICAL FIX: Use individual -c arguments for each counter
+            # This is the correct way to add multiple counters that creates proper CSV columns
             create_cmd = [
                 'logman', 'create', 'counter', collector_name,
-                '-f', 'csv',  # CHANGED: Use CSV format instead of bincirc
-                '-max', '500',
-                '-c', counter_string,
+                '-f', 'csv',
+                '-v', 'mmddhhmm',
                 '-si', '00:05:00',
-                '-o', f'C:\\PerfLogs\\Admin\\{collector_name}\\cpu_metrics.csv'  # CHANGED: Explicit .csv extension
+                '-o', f'C:\\PerfLogs\\Admin\\{collector_name}\\cpu_metrics',
+                '-c',
+                r'\Processor(_Total)\% Processor Time',
+                r'\Memory\Available MBytes',
+                r'\PhysicalDisk(_Total)\% Disk Time'
             ]
+
             
             result['commands_executed'].append(' '.join(create_cmd))
             
@@ -296,16 +301,17 @@ class WindowsServerInventory:
             
             if create_result.returncode != 0:
                 error_detail = create_result.stderr if create_result.stderr else create_result.stdout
-                print(f"  Detailed collector creation failed: {error_detail.strip()}")
-                print(f"  Attempting simplified configuration...")
+                print(f"  Multi-counter creation failed: {error_detail.strip()}")
+                print(f"  Attempting single-counter configuration...")
                 
                 # Try simpler command with just CPU counter
                 simple_cmd = [
                     'logman', 'create', 'counter', collector_name,
-                    '-c', r'\Processor(_Total)\% Processor Time',
+                    '-f', 'csv',
+                    '-v', 'mmddhhmm',
                     '-si', '00:05:00',
-                    '-f', 'csv',  # CHANGED: CSV format
-                    '-o', f'C:\\PerfLogs\\Admin\\{collector_name}\\cpu_metrics.csv'
+                    '-o', f'C:\\PerfLogs\\Admin\\{collector_name}\\cpu_metrics',
+                    '-c', r'\Processor(_Total)\% Processor Time'
                 ]
                 result['commands_executed'].append(' '.join(simple_cmd))
                 
@@ -321,33 +327,37 @@ class WindowsServerInventory:
                     error_detail = simple_result.stderr if simple_result.stderr else simple_result.stdout
                     result['message'] = f"Failed to create collector: {error_detail.strip()}"
                     result['return_code'] = simple_result.returncode
-                    print(f"  Simplified configuration also failed: {error_detail.strip()}")
+                    print(f"  Failed: {error_detail.strip()}")
                     return result
-                else:
-                    print(f"  ✓ Created data collector set (simplified configuration)")
+                
+                print(f"  ✓ Created with CPU counter")
+                
+                # Now add additional counters
+                print(f"  Adding memory and disk counters...")
+                
+                update_mem_cmd = ['logman', 'update', 'counter', collector_name, '-c', r'\Memory\Available MBytes']
+                result['commands_executed'].append(' '.join(update_mem_cmd))
+                subprocess.run(
+                    update_mem_cmd,
+                    capture_output=True,
+                    text=True,
+                    encoding='utf-8',
+                    errors='ignore'
+                )
+                
+                update_disk_cmd = ['logman', 'update', 'counter', collector_name, '-c', r'\PhysicalDisk(_Total)\% Disk Time']
+                result['commands_executed'].append(' '.join(update_disk_cmd))
+                subprocess.run(
+                    update_disk_cmd,
+                    capture_output=True,
+                    text=True,
+                    encoding='utf-8',
+                    errors='ignore'
+                )
+                
+                print(f"  ✓ Additional counters added")
             else:
-                print(f"  ✓ Created data collector set")
-            
-            # Configure the schedule to run continuously
-            print(f"  Configuring schedule...")
-            schedule_cmd = [
-                'logman', 'update', collector_name,
-                '-b', '00:00:00',  # Begin time (midnight)
-                '-e', '23:59:59',  # End time (just before midnight)
-                '-rf', '24:00:00'  # Repeat every 24 hours
-            ]
-            result['commands_executed'].append(' '.join(schedule_cmd))
-            
-            schedule_result = subprocess.run(
-                schedule_cmd,
-                capture_output=True,
-                text=True,
-                encoding='utf-8',
-                errors='ignore'
-            )
-            
-            if schedule_result.returncode != 0:
-                result['message'] = f"Warning: Schedule configuration had issues: {schedule_result.stderr}"
+                print(f"  ✓ Created data collector set with all counters")
             
             # Start the data collector
             print(f"  Starting data collector...")
@@ -371,9 +381,12 @@ class WindowsServerInventory:
             result['success'] = True
             result['message'] = (
                 f"Performance Monitor data collector '{collector_name}' has been successfully configured and started.\n"
-                f"  - Collecting CPU and memory metrics every 5 minutes\n"
+                f"  - Collecting CPU, Memory, and Disk metrics every 5 minutes\n"
                 f"  - Logs saved to: C:\\PerfLogs\\Admin\\{collector_name}\\ (CSV format)\n"
-                f"  - Historical data will be available after 24 hours of collection"
+                f"  - Wait 5-10 minutes for first data collection\n"
+                f"  - Old CSV files have been cleaned to ensure fresh start\n"
+                f"  - Each counter has its own column in the CSV file\n"
+                f"  - Run inventory script again after 10 minutes to see CPU history data"
             )
             
         except Exception as e:
@@ -734,7 +747,12 @@ class WindowsServerInventory:
                                 print(f"  ✓ Successfully parsed {len(cpu_values)} CPU data points")
                             else:
                                 cpu_history['error'] = 'CSV files found but no valid CPU data extracted'
-                                cpu_history['note'] = 'Check that Performance Monitor is collecting the correct counters'
+                                cpu_history['note'] = 'Performance Monitor may have just started. Wait a few minutes for data collection, or check that the collector is running properly.'
+                                cpu_history['debug_info'] = {
+                                    'csv_files_processed': len(csv_files),
+                                    'total_rows_found': len(hourly_data),
+                                    'suggestion': 'Run diagnose_csv.py to inspect the CSV file contents'
+                                }
                         
                         except Exception as e:
                             cpu_history['parse_error'] = str(e)
@@ -1861,7 +1879,7 @@ class WindowsServerInventory:
         if 'docker' in self.inventory and self.inventory['docker'].get('installed'):
             docker = self.inventory['docker']
             print(f"\nDocker:")
-            print(f"  - Containers: {len(docker.get('containers', []))}")
+            print(f"  - Containers: {len(docker.get('containers', []))}") 
             print(f"  - Images: {len(docker.get('images', []))}")
             print(f"  - Networks: {len(docker.get('networks', []))}")
         
@@ -2148,4 +2166,4 @@ Note: Run as Administrator for complete information and task scheduling
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    main()
